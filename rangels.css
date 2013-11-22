@@ -1,0 +1,561 @@
+body {
+background-color: #FFF;
+background-image: url(%%bricks%%);
+background-repeat: repeat;
+color: #222222;
+font: 11px "Helvetica Neue",Helvetica,Arial,sans-serif;
+margin-left: auto;
+width: 1060px;
+margin-right: auto;
+
+}
+
+a {	color: #00A5F0; }
+
+a:hover {
+	color: #24BBFF;
+	text-decoration: none;
+}
+
+::-moz-selection {
+	background: #E92C6C;
+	color: #fff;
+	text-shadow: 0 1px #ba2356;
+}
+
+::selection {
+	background: #E92C6C;
+	color: #fff;
+	text-shadow: 0 1px #ba2356;
+}
+
+::selection {
+	background: #E92C6C;
+	color: #fff;
+	text-shadow: 0 1px #ba2356;
+}
+
+/* header styles */
+
+#header {
+background-color:#b31b1b;
+	border: 1px solid #333;
+	border-width: 1px 0 0 0;
+	height: 42px;
+	overflow: hidden;
+border-radius:5px;
+	position: absolute;
+    top: -1px;
+    width: 1060px;
+    margin-left: -4px;
+    padding: 0 4px;
+    z-index: 100;
+}
+#header a{
+color:#FFF;
+}
+
+#sr-header-area {
+	display: none;
+}
+
+#header-bottom-left {
+	position: relative;
+	top: 5px;
+}
+
+
+
+#header li a#viewImagesButton, #header li a[href$="/wiki/"], #header li a[href$="/saved/"], #header li a#rmaUITab, #header li a.modtools-on { display: none; }
+
+/* technically sidebar, but search is moved to header so whatever */
+
+
+.side form#search {
+	visibility: visible;
+	position: fixed;
+	top: 1px;
+	width: 75px;
+	z-index: 100;
+	height: 27px;
+	margin-left: -580px;
+	padding: 16px 11px 7px;
+	}
+
+.comments-page .side form#search , .related-page .side form#search {
+	margin-left: -714px;
+}
+
+.submit-page .side form#search {
+	margin-left: -865px;
+}
+
+.side form#search input {
+	color: #aaa;
+}
+
+.side #search input[type="text"] {
+display:none;
+}
+
+#searchexpando {
+	width: 300px;
+}
+
+
+#header-bottom-right {
+	background: transparent;
+	position: absolute;
+	top: 24px !important;
+	right: 0;
+}
+
+span.separator {
+	display: none;
+}
+
+#header-bottom-right a {
+	background: transparent;
+}
+
+
+a#mail.nohavemail {
+	content: "0";
+}
+
+
+#modmail, #openRESPREFS, #RESConsole, #RESSettingsButton {
+	display: none !important;
+	background: transparent !important;
+}
+
+
+/* main content stuff*/
+
+div.content {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px #AAAAAA;
+padding: 9px;
+
+}
+
+
+
+.thing {
+	border-bottom: 0px solid #ddd;
+}
+
+.thing .domain {display: none;}
+
+.listing-page .thing p.tagline {font-size: 0;}
+
+.listing-page ul.flat-list li a, #header ul.flat-list li a, .listing-page ul.flat-list li.share {display:none;}
+
+.thing p.tagline a.author {
+	visibility: visible;
+	color: #00A5F0; 
+	float:left;
+	font-size: 11px;
+}
+
+.thing p.tagline a:hover {
+	color: #24BBFF;
+	text-decoration: none;
+}
+
+
+
+
+/*sidebar*/
+
+
+.side  {
+	
+	visibility: visible;
+	width: 300px;
+	background: #FFF;
+	color: #999;
+	border-radius: 5px;
+padding:2px;
+	
+}
+
+
+
+
+.side .md blockquote {
+	border: 0;
+}
+
+.listing-page .side .md blockquote a {
+	
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	display: inline-block;
+    padding: 14px 0 13px;
+    right: 14px;
+    text-align: center;
+    top: 16px;
+    width: 131px;
+    font-size: 16px;
+}
+
+.listing-page .side .md blockquote a:hover {
+	background-position: center bottom;
+	text-decoration: none;
+}
+
+
+
+
+/*this is a moronic way of doing it. ill fix it eventually*/
+
+.sidebox, .side .account-activity-box, .side .bottom, .side  .tagline, .side .toggle, .side .spacer > *:not(#ad_main):not(#search):not(.titlebox):not(#moderation_tools):not(.submit-link), .side .titlebox > *:not(.usertext):not(.subscribers):not(.users-online ) {
+	display: none !important;
+} 
+
+.side .spacer .submit-link.sidebox.submit {
+	visibility: visible;
+	position:fixed;
+	margin-left: -220px;
+    top: 12px;
+	display: block !important;
+	z-index: 1000;
+}
+
+.side .spacer .submit-link.sidebox.submit .morelink {
+	background: none;
+	border: none;
+}
+
+
+.side .spacer .submit-link.sidebox.submit .morelink a {
+	font-weight: bold;
+	color: #aaa;
+	text-shadow: #000000 0px 1px 0px;
+	visibility: hidden;
+
+}
+
+.side .spacer .submit-link.sidebox.submit .morelink a:after {
+	content: " Submit";
+	color: #aaa;
+	font-size: 13px;
+	float:left;
+	visibility: visible;
+}
+
+
+
+.side .spacer .submit-link.sidebox.submit .morelink a:hover:after {
+	color: #fff;
+}
+
+.side .spacer .submit-link .morelink a:before {
+	content: "";
+	
+	background-position: center top;
+	height: 15px;
+	width: 21px;
+	padding-left: 25px;
+	font-size: 13px;
+	visibility: visible;
+	float:left;
+	position: relative;
+    top: 6px;
+}
+
+.side .spacer .submit-link .morelink a:hover:before {
+	background-position: bottom center;
+    top: 7px;
+}
+
+.side .spacer .submit-link.sidebox.submit .nub {
+	display: none;
+}
+
+
+
+/* comments pages */
+
+.comments-page .thing.link a.title, .comments-page .thing.link a.title:visited {
+	color: #FFFFFF;
+    font-size: 22px;
+}
+
+.link.self .tagline {
+    font-size: 0;
+}
+
+.link.self .tagline a.author {
+	font-size: 11px;
+}
+
+
+.comments-page .thing.link .md {
+	border: none;
+	background: none;
+	color: #e9e9e9;
+	padding: 0;
+}
+
+.comments-page .thing.link .midcol {
+	float: right;
+}
+
+.comments-page .thing.link .midcol .down, .comments-page .thing.link .midcol .downmod {
+	display: none;
+} 
+
+.comments-page .thing.link ul.flat-list li a {
+	font-size: 0;
+}
+
+.comments-page .thing.link ul.flat-list li a.comments {
+	font-weight: normal !important;
+	font-size: 11px !important;
+	text-align: left;
+	display:inline;
+	width:75px;
+	float: left;
+}
+
+
+.comments-page .thing.link a.comments:before {
+	
+	content: "";
+	display: inline-block;
+	height: 9px;
+	padding-right:3px;
+	width:10px;
+}
+
+
+.commentarea {
+	background: #fff;
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+	border-radius: 5px
+}
+
+
+
+.commentarea > .usertext .usertext-edit {
+	background: #f1f1f1;
+	border-top: 1px #ccc solid;
+	border-bottom: 1px #e9e9e9 solid;
+	width: 710px;
+}
+
+.commentingAs, .markdownEditor, .comment-visits-box, .commentarea .menuarea {
+	display: none;
+}
+
+
+.comment, .res .comment {
+	padding: 10px 0 0 !important
+}
+
+.comment p.tagline a.author {
+	color: #3B5998;
+}
+
+
+
+
+body:not(.res) .comment .usertext-body .md {
+	margin: 5px 0;
+}
+
+
+
+/* search page */
+
+
+.search-page .searchpane {
+	background: #F4F4F4;
+    border-color: #FFFFFF #DDDDDD #DDDDDD;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    left: -1px;
+    position: relative;
+    width: 740px;
+    padding: 0;
+    height:70px;
+}
+
+/*whatthefuck*/
+
+.search-page #search input[type="text"] {
+	
+	background-repeat: no-repeat !important;
+	background-position: center left !important;
+    border-radius: 15px;
+    border: 1px solid #ddd !important;
+    padding: 9px 0 9px 21px !important;
+    margin: 0 10px;
+    background: #fff !important;
+    width: 690px !important;
+    z-index: 10000;
+    position: absolute;
+    top: 18px;
+    font-size: 14px !important;
+    color: #999 !important;
+    font-weight: normal !important;
+    text-shadow: none !important;
+}
+
+.menuarea {
+    border-bottom: 1px solid #DDDDDD;
+    margin: 0;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+
+.search-page .searchpane h4, .search-page .searchpane p, .search-page .searchpane label, .search-page .searchpane input[type="submit"], a#search_showmore, .searchfacets {
+	display: none;
+}
+
+.footer > * {
+	font-size: 11px !important;
+	color: #666 !important;
+}
+
+/*RES stuff*/
+
+.expando-button {
+	display: none !important;
+}
+
+.RESUserTag, .redditSingleClick { 
+	display: none;
+}
+
+.keyHighlight {
+	outline: none !important;
+	background: transparent !important;
+}
+
+
+.res .comment {
+	border: none !important;
+}
+
+.comment div.child {
+    border-left: medium none !important;
+}
+
+.res .comment, .res .comment .comment, .res .comment .comment .comment , .res .comment .comment .comment .comment , .res .comment .comment .comment .comment .comment , .res .comment .comment .comment .comment .comment .comment , .res .comment .comment .comment .comment .comment .comment .comment , .res .comment .comment .comment .comment .comment .comment .comment .comment , .res .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {  
+	background-color: transparent !important; 
+	border: solid #e9e9e9 !important;
+	border-width: 1px 0 0 !important;
+}
+
+.newComments {
+	display: none !important
+}
+.morelink,.tabmenu,#header-img.default-header,#sr-header-area,.titlebox .fancy-toggle-button,.subscribers,.users-online,h1.redditname,.titlebox form.flairtoggle,.sidecontentbox .content,.titlebox .bottom,.link .rank,.link .midcol,#header-img{
+display: none;
+}
+.pagename a:after{
+content:".reddit.com";
+}
+#header-bottom-left {
+font-size: larger;
+height: 39px;
+}
+.content {
+    margin-top: 73px
+    }
+/* This gem is from jamt9000 */
+/* Positioning a new tab up top */
+.titlebox .usertext-body .md ol li a {
+background-color: #FFFFDC;
+border: 1px solid #C8C864;
+    color: #E8701A;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid #2e2e2e
+    }
+.titlebox .usertext-body .md ol li a:hover {
+background-color: #FFFFDC;
+border: 1px solid #C8C864;
+    color: #2e2e2e
+    }
+.titlebox form {
+    position: static
+    }
+.titlebox .usertext-body .md ol {
+list-style: none;
+position: absolute;
+top: 45px;
+left: 148px;
+z-index: 90001111;
+margin: 0;
+padding: 0;
+display: table;
+}
+.titlebox .usertext-body .md ol li {
+    display: inline;
+    margin: 0 3px
+    }
+.titlebox .usertext-body .md ol li a {
+    background-color: #F6E69F;
+    padding: 2px 6px 2px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small
+    }
+.hover.pagename.redditname {
+font-size: 27px;
+}
+.side a[href*="#link"]{
+    display: block;
+    clear: none;
+    float: left;
+    cursor: default;
+    width: 300px;
+height: 400px;
+    background-image: url(%%featured%%) !important;
+background-repeat:no-repeat;
+border-radius:5px;
+}
+.link {
+margin: 0;
+margin-bottom: 8px;
+}
+
+a[href*="game_thread"].thumbnail.self {
+    background: transparent url(%%gamethread%%) no-repeat 0 0;
+width:83px;
+height:70px;
+    }
+.thumbnail{
+border-radius:5px;
+}
+.thumbnail img,.thumbnail.self {
+background: url(%%thumb-angels%%);
+    padding-left: 0px;
+ 
+border-radius:5px;
+width:83px;
+height:70px;
+    }
+.thumbnail.default {
+background:url(%%selfdefault%%);
+padding-left: 0px;
+ 
+border-radius:5px;
+width:83px;
+height:70px;
+}
+.infobar.welcome{
+display:none !important;
+}
