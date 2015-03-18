@@ -1,0 +1,1819 @@
+/* =============================================================== */
+/*===============angelsbaseballtheme v 5.10.3 by laaabaseball ==============*/
+/*     questions about this theme? just message laaabaseball       */
+/* using something in this theme? Let me know! http://redd.it/vkaqg*/
+/* =============================================================== */
+/* body header and content elements   */
+body {
+    color: #3b3b3b;
+    background-color: #EEE;
+    font-family: arial, sans-serif;
+  
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+}
+/**/
+#header,.res #header {
+     background-image: url(%%angelsheader%%);
+background-position:center center;
+background-size:cover;
+background-repeat: repeat;
+    height: 110px;
+    font-size: 12px;
+    z-index: 999999;
+    overflow: visible!important;
+    border-bottom: 0px solid #000;
+}
+.content {
+margin:31px 5px 0px 5px;
+}
+.content:before{
+    /*from laaabaseball*/
+     content: url(%%smallcup%%) " Hey buttercupper! You're not subscribed to r/angelsbaseball yet!";
+    margin:4px;
+    color:#2e2e2e;
+    }
+
+ .subscriber .content:before{
+    content: " " !important;
+    }
+
+.side .content:before {
+        content: " " !important
+        }
+.side:before{
+content:url(%%champions%%);
+}
+h1.redditname {
+    background-color: #369;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+    text-align: center;
+}
+h1.redditname a {
+    color: #FFF;
+    font-weight: bold;
+}
+/* reddit logo */
+.hover.pagename.redditname {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+    color: #FFF;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+#header-bottom-left #header-img-a img {
+    display: block;
+width: 69px;
+height: 64px;
+}
+#sr-header-area {
+    opacity: 0.7;
+    height: 18px;
+    background-color: #333;
+    border-bottom: 1px solid #333;
+}
+#sr-header-area:hover {
+    opacity: 100;
+}
+#sr-header-area a {
+    color: #C4C4C4;
+    }
+
+#sr-more-link {
+    position: absolute;
+    background-color: #333;
+    color: #C4C4C4;
+}
+.dropdown.srdrop .selected {
+    background-image: none;
+}
+.dropdown.srdrop .selected:after {
+    content: "▼";
+}
+.sr-bar .separator {
+    color: #333;
+}
+#sr-header-area .width-clip .dropdown.srdrop .selected.title {
+    color: #C4C4C4;
+    font-size: 9px;
+    font-weight: normal;
+    font-family: Verdana, Arial, sans-serif;
+    padding-right: 3px;
+}
+#sr-header-area .width-clip .dropdown.srdrop .selected.title:hover {
+    color: #5b92fa;
+}
+#sr-header-area .drop-choices a.choice {
+    color: #333 !important;
+}
+#sr-header-area .drop-choices a.choice:hover {
+    background-color: #5b92fa;
+    color: #fff !important;
+}
+/* top menu tabs*/
+.tabmenu li.selected a {
+    border-style: solid;
+    border-width: 0px;
+    color: #FFF;
+    z-index: 100;
+    background-color: #369
+    }
+.tabmenu li a {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    color: #ffffff;
+    background-color: #069
+    }
+.tabmenu li a:hover {
+    background-color: #369
+    }
+.tabmenu li.selected a:hover {
+    background-color: #369
+    }
+/* Sidebar */
+/* SUBMIT LINK OR POST */
+.morelink {
+    background: #b31b1b;
+    padding: 2px 7px 2px 7px;
+    text-decoration: none;
+    margin: 3px;
+    border-right: 2px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 4px solid #d8d8d8;
+    border-radius: 3px;
+}
+.morelink:hover {
+    background: #f56e7a;
+    background-image: linear-gradient(to bottom, #f56e7a, #e36b6b);
+    text-decoration: none;
+}
+
+.morelink a {
+    line-height: 28px;
+    text-shadow: 1px 1px 3px #858185;
+    font-family: Arial;
+    color: #ffffff !important;
+    font-size: 20px;
+    border: none!important}
+.morelink a:hover {
+    text-decoration: none;
+    border: none!important;
+}
+.disabled .morelink,.disabled .morelink:hover {
+    background-image: none;
+    border: 0px solid;
+    color: white;
+    font-size: 0px;
+    background-color: #c8c8c8;
+    margin-top: 3px;
+    text-shadow: none;
+}
+.disabled .morelink a {
+    color: #fff;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: default;
+    text-indent: 0px;
+    text-shadow: none;
+}
+.account-activity-box, .sidebox.create, .morelink .nub {
+    display: none;
+}
+/*number of subscriber and users here now*/
+.titlebox .word {
+    display: none;
+}
+.titlebox .number:after {
+    content: " halos";
+}
+.titlebox .users-online span.number:after {
+    content: " users online";
+}
+/* Flair */
+/* Logo stuff below */
+/* Remove flair from the frontpage and admins box */
+.sitetable a[href*="#flair"],div.titlebox span.number,.linkflair .linkflairlabel {
+    font-size: 11px;
+    font-weight: bold;
+    color: #B31B1B;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    margin-right: .5em;
+    padding: 0 2px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair,a[href="/flair"],a[href="/flairblue"],a[href="/flairretired"] {
+    font-size: 11px;
+    font-weight: bold;
+    color: #B31B1B;
+    width: 16px;
+    height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+    background-image: url(%%teamlogos%%);
+    background-position: 20px 20px;
+    display: inline-block;
+    margin-right: .5em;
+    padding: 0 2px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-bot {
+    background: white!important;
+    width: auto !important;
+    height: 17px !important;
+}
+.flair-red,a[href="/flair"] {
+    background: white!important;
+    height: 13px !important;
+}
+.flair-blue,a[href="/flairblue"] {
+    background: white!important;
+    color: #191170;
+    height: 13px !important;
+}
+.flair-silver {
+    background: white!important;
+    color: silver;
+    height: 13px !important;
+}
+.flair-retired,a[href="/flairretired"] {
+    background: #FFFFDC !important;
+    border: 1px solid #C8C864;
+    color: #B31B1B;
+    height: 13px !important;
+}
+/* Remove the default styling which has borders and such */
+.flairsample-left {
+    font-size: 0px !important;
+}
+.flairsample-left a {
+    font-size: 10px !important;
+}
+a[href="/ARI"]:before,.flair-ari {
+    background-position: 0 -21px !important;
+}
+.wiki a[href="/r/Braves"]:before,.side a[href="/r/Braves"]:before,a[href="/ATL"]:before,.flair-atl {
+    background-position: 0 -42px !important}
+a[href="/BAL"]:before,.flair-bal {
+    background-position: 0 -609px !important}
+.wiki a[href="/r/RedSox"]:before,.side a[href="/r/RedSox"]:before,a[href="/BOS"]:before,.flair-bos {
+    background-position: 0 -63px !important}
+.wiki a[href="/r/Cubs"]:before,.side a[href="/r/Cubs"]:before,a[href="/CHI"]:before,a[href="/CHC"]:before,.flair-chc {
+    background-position: 0 -84px !important;
+}
+.wiki a[href="/r/Reds"]:before,.side a[href="/r/Reds"]:before,a[href="/CIN"]:before,.flair-cin {
+    background-position: 0 -105px !important}
+.wiki a[href="/r/WahoosTipi"]:hover:before,.side a[href="/r/WahoosTipi"]:hover:before,a[href="/CLE"]:before,.flair-cle {
+    background-position: 0 -126px !important;
+}
+.wiki a[href="/r/ColoradoRockies"]:before,.side a[href="/r/ColoradoRockies"]:before,a[href="/COL"]:before,.flair-col {
+    background-position: 0 -147px !important}
+.wiki a[href="/r/WhiteSox"]:before,.side a[href="/r/WhiteSox"]:before,a[href="/CHW"]:before,a[href="/CWS"]:before,.flair-cws {
+    background-position: 0 -168px !important}
+.wiki a[href="/r/MotorCityKitties"]:before,.side a[href="/r/MotorCityKitties"]:before,a[href="/DET"]:before,.flair-det {
+    background-position: 0 -189px !important}
+a[href="/FLA"]:before,.flair-fla {
+    background-position: 0 -210px !important}
+a[href="/HOU"]:before,.flair-hou {
+    background-position: 0 -1533px !important;
+}
+.wiki a[href="/r/KCRoyals"]:before,.side a[href="/r/KCRoyals"]:before,a[href="/KCR"]:before,a[href="/KC"]:before,.flair-kc {
+    background-position: 0 -252px !important}
+.wiki a[href="/r/AngelsBaseball"]:before,.side a[href="/r/AngelsBaseball"]:before,a[href="/LAA"]:before,.flair-laa {
+    background-position: 0 0 !important}
+.wiki a[href="/r/Dodgers"]:before,.side a[href="/r/Dodgers"]:before,a[href="/LAD"]:before,.flair-lad {
+    background-position: 0 -273px !important}
+.wiki a[href="/r/Brewers"]:before,.side a[href="/r/Brewers"]:before,a[href="/MIL"]:before,.flair-mil {
+    background-position: 0 -294px !important}
+.wiki a[href="/r/MinnesotaTwins"]:before,.side a[href="/r/MinnesotaTwins"]:before,a[href="/MIN"]:before,.flair-min {
+    background-position: 0 -315px !important;
+}
+.wiki a[href="/r/NewYorkMets"]:before,.side a[href="/r/NewYorkMets"]:before,a[href="/NYM"]:before,.flair-nym {
+    background-position: 0 -336px !important;
+}
+.wiki a[href="/r/Yankees"]:before,.side a[href="/r/Yankees"]:before,a[href="/NYY"]:before,.flair-nyy {
+    background-position: 0 -357px !important}
+.wiki a[href="/r/oaklandathletics"]:before,.side a[href="/r/oaklandathletics"]:before,a[href="/OAK"]:before,.flair-oak {
+    background-position: 0 -378px !important}
+.wiki a[href="/r/Phillies"]:before,.side a[href="/r/Phillies"]:before,a[href="/PHI"]:before,.flair-phi {
+    background-position: 0 -399px !important}
+.wiki a[href="/r/Buccos"]:before,.side a[href="/r/Buccos"]:before,a[href="/PIT"]:before,.flair-pit {
+    background-position: 0 -420px !important}
+a[href="/SDP"]:before,a[href="/SD"]:before,.flair-sd {
+    background-position: 0 -441px !important}
+.wiki a[href="/r/Mariners"]:before,.side a[href="/r/Mariners"]:before,a[href="/SEA"]:before,.flair-sea {
+    background-position: 0 -462px !important}
+.wiki a[href="/r/SFGiants"]:before,.side a[href="/r/SFGiants"]:before,a[href="/SFG"]:before,a[href="/SF"]:before,.flair-sf {
+    background-position: 0 -483px !important}
+.wiki a[href="/r/Cardinals"]:before,.side a[href="/r/Cardinals"]:before,a[href="/STL"]:before,.flair-stl {
+    background-position: 0 -504px !important}
+.wiki a[href="/r/TampaBayRays"]:before,.side a[href="/r/TampaBayRays"]:before,a[href="/TBR"]:before,a[href="/TB"]:before,.flair-tb {
+    background-position: 0 -525px !important}
+.wiki a[href="/r/TexasRangers"]:before,.side a[href="/r/TexasRangers"]:before,a[href="/TEX"]:before,.flair-tex {
+    background-position: 0 -546px !important}
+a[href="/TOR"]:before,.flair-tor {
+    background-position: 0 -1302px !important}
+a[href="/WAS"]:before,.flair-was {
+    background-position: 0 -588px !important}
+a[href="/LAS"]:before,.flair-las {
+    background-position: 0 -630px !important}
+a[href="/MIL1"]:before,.flair-mil-1 {
+    background-position: 0 -651px !important}
+a[href="/TOR1"]:before,.flair-tor-1 {
+    background-position: 0 -672px !important}
+a[href="/BAL1"]:before,.flair-bal-1 {
+    background-position: 0 -693px !important}
+a[href="/ATL1"]:before,.flair-atl-1 {
+    background-position: 0 -714px !important}
+a[href="/MIN1"]:before,.flair-min-1 {
+    background-position: 0 -735px !important}
+a[href="/SWB"]:before,.flair-swb {
+    background-position: 0 -756px !important}
+.wiki a[href="/r/Nationals"]:before,.side a[href="/r/Nationals"]:before,a[href="/WAS1"]:before,.flair-was-1 {
+    background-position: 0 -777px !important;
+}
+a[href="/ATL2"]:before,.flair-atl-2 {
+    background-position: 0 -798px !important}
+a[href="/PHI1"]:before,.flair-phi-1 {
+    background-position: 0 -819px !important}
+a[href="/SFG1"]:before,a[href="/SF1"]:before,.flair-sf-1 {
+    background-position: 0 -840px !important}
+a[href="/MON"]:before,.flair-mon {
+    background-position: 0 -861px !important}
+.wiki a[href="/r/Padres"]:before,.side a[href="/r/Padres"]:before,a[href="/SDP1"]:before,a[href="/SD1"]:before,.flair-sd-1 {
+    background-position: 0 -903px !important}
+a[href="/SDP2"]:before,a[href="/SD2"]:before,.flair-sd-2 {
+    background-position: 0 -882px !important}
+a[href="/HOU1"]:before,.flair-hou-1 {
+    background-position: 0 -924px !important}
+a[href="/SEA1"]:before,.flair-sea-1 {
+    background-position: 0 -945px !important}
+a[href="/OAK1"]:before,.flair-oak-1 {
+    background-position: 0 -966px !important}
+a[href="/TEX1"]:before,.flair-tex-1 {
+    background-position: 0 -987px !important}
+a[href="/NYY1"]:before,.flair-nyy-1 {
+    background-position: 0 -1008px !important}
+a[href="/HAN"]:before,.flair-han {
+    background-position: 0 -1029px !important}
+a[href="/ARI1"]:before,.flair-ari-1 {
+    background-position: 0 -1050px !important}
+a[href="/BOS1"]:before,.flair-bos-1 {
+    background-position: 0 -1071px !important}
+a[href="/DUR"]:before,.flair-dur {
+    background-position: 0 -1092px !important}
+a[href="/LAA1"]:before,.flair-laa-1 {
+    background-position: 0 -1113px !important}
+a[href="/TBR1"]:before,a[href="/TB1"]:before,.flair-tb-1 {
+    background-position: 0 -1134px !important}
+a[href="/NYM1"]:before,.flair-nym-1 {
+    background-position: 0 -1155px !important}
+a[href="/LID"]:before,.flair-lid {
+    background-position: 0 -1176px !important}
+.wiki a[href="/r/Orioles"]:before,.side a[href="/r/Orioles"]:before,a[href="/BAL2"]:before,.flair-bal-2 {
+    background-position: 0 -1197px !important}
+a[href="/SDP3"]:before,a[href="/SD3"]:before,.flair-sd-3 {
+    background-position: 0 -1218px !important}
+.wiki a[href="/r/letsgofish"]:before,.side a[href="/r/letsgofish"]:before,a[href="/MIA"]:before,.flair-mia {
+    background-position: 0 -1239px !important;
+}
+.wiki a[href="/r/WahoosTipi"]:before,.side a[href="/r/WahoosTipi"]:before,a[href="/CLE1"]:before,.flair-cle-1 {
+    background-position: 0 -1260px !important;
+}
+a[href="/CHI1"]:before,a[href="/CHC1"]:before,.flair-chc-1 {
+    background-position: 0 -1281px !important}
+.wiki a[href="/r/TorontoBlueJays"]:before,.side a[href="/r/TorontoBlueJays"]:before,a[href="/TOR2"]:before,.flair-tor-2 {
+    background-position: 0 -1302px !important}
+a[href="/MIN2"]:before,.flair-min-2 {
+    background-position: 0 -1323px !important}
+a[href="/HOU2"]:before,.flair-hou-2 {
+    background-position: 0 -1344px !important}
+a[href="/DET1"]:before,.flair-det-1 {
+    background-position: 0 -1365px !important}
+a[href="/FLA1"]:before,.flair-fla-1 {
+    background-position: 0 -1386px !important}
+.wiki a[href="/r/azdiamondbacks"]:before,.side a[href="/r/azdiamondbacks"]:before,a[href="/ARI2"]:before,.flair-ari-2 {
+    background-position: 0 -1407px !important}
+a[href="/LAD1"]:before,.flair-lad-1 {
+    background-position: 0 -1428px !important}
+a[href="/TBR2"]:before,a[href="/TB2"]:before,.flair-tb-2 {
+    background-position: 0 -1449px !important}
+a[href="/STL1"]:before,.flair-stl-1 {
+    background-position: 0 -1470px !important}
+a[href="/SEA2"]:before,.flair-sea-2 {
+    background-position: 0 -1491px !important}
+a[href="/KCR1"]:before,a[href="/KC1"]:before,.flair-kc-1 {
+    background-position: 0 -1512px !important}
+.wiki a[href="/r/Astros"]:before,.side a[href="/r/Astros"]:before,a[href="/HOU2"]:before,.flair-hou-2 {
+    background-position: 0 -1533px !important}
+a[href="/SFG2"]:before,a[href="/SF2"]:before,.flair-sf-2 {
+    background-position: 0 -1554px !important}
+a[href="/WAS2"]:before,.flair-was-2 {
+    background-position: 0 -1575px !important}
+a[href="/TEX2"]:before,.flair-tex-2 {
+    background-position: 0 -1596px !important}
+a[href="/LAD2"]:before,.flair-lad-2 {
+    background-position: 0 -1617px !important}
+a[href="/BK"]:before,.flair-bk {
+    background-position: 0 -1638px !important}
+a[href="/MLB"]:before,.flair-mlb {
+    background-position: 0 -1659px !important}
+.flair-loser {
+    background-position: 0 -1680px !important;
+    border-radius: 3px;
+}
+/* Team logos for use in comments - The second rule on a line is deprecated! Don't use it! */
+a[href="/ARI"]:before,a[href="/ATL"]:before,a[href="/BAL"]:before,a[href="/BOS"]:before,a[href="/CHC"]:before, a[href="/CHI"]:before,a[href="/CIN"]:before,a[href="/CLE"]:before,a[href="/COL"]:before,a[href="/CWS"]:before, a[href="/CHW"]:before,a[href="/DET"]:before,a[href="/FLA"]:before,a[href="/HOU"]:before,a[href="/KC"]:before, a[href="/KCR"]:before,a[href="/LAA"]:before,a[href="/LAD"]:before,a[href="/MIL"]:before,a[href="/MIN"]:before,a[href="/NYM"]:before,a[href="/NYY"]:before,a[href="/OAK"]:before,a[href="/PHI"]:before,a[href="/PIT"]:before,a[href="/SD"]:before, a[href="/SDP"]:before,a[href="/SEA"]:before,a[href="/SF"]:before, a[href="/SFG"]:before,a[href="/STL"]:before,a[href="/TB"]:before, a[href="/TBR"]:before,a[href="/TEX"]:before,a[href="/TOR"]:before,a[href="/WAS"]:before,a[href="/LAS"]:before,a[href="/MIL1"]:before,a[href="/TOR1"]:before,a[href="/BAL1"]:before,a[href="/ATL1"]:before,a[href="/MIN1"]:before,a[href="/SWB"]:before,a[href="/WAS1"]:before,a[href="/ATL2"]:before,a[href="/PHI1"]:before,a[href="/SF1"]:before, a[href="/SFG1"]:before,a[href="/MON"]:before,a[href="/SD1"]:before, a[href="/SDP1"]:before,a[href="/SD2"]:before, a[href="/SDP2"]:before,a[href="/HOU1"]:before,a[href="/SEA1"]:before,a[href="/OAK1"]:before,a[href="/TEX1"]:before,a[href="/NYY1"]:before,a[href="/HAN"]:before,a[href="/ARI1"]:before,a[href="/BOS1"]:before,a[href="/DUR"]:before,a[href="/LAA1"]:before,a[href="/TB1"]:before, a[href="/TBR1"]:before,a[href="/NYM1"]:before,a[href="/LID"]:before,a[href="/BAL2"]:before,a[href="/SD3"]:before, a[href="/SDP3"]:before,a[href="/MIA"]:before,a[href="/CLE1"]:before,a[href="/CHC1"]:before, a[href="/CHI1"]:before,a[href="/TOR2"]:before,a[href="/MIN2"]:before,a[href="/HOU2"]:before,a[href="/DET1"]:before,a[href="/FLA1"]:before,a[href="/ARI2"]:before,a[href="/LAD1"]:before,a[href="/TB2"]:before, a[href="/TBR2"]:before,a[href="/STL1"]:before,a[href="/SEA2"]:before,a[href="/KC1"]:before, a[href="/KCR1"]:before,a[href="/HOU2"]:before,a[href="/SF2"]:before, a[href="/SFG2"]:before,a[href="/WAS2"]:before,a[href="/TEX2"]:before,a[href="/LAD2"]:before,a[href="/BK"]:before,a[href="/MLB"]:before,.side a[href="/r/AngelsBaseball"]:before,.side a[href="/r/Astros"]:before,.side a[href="/r/azdiamondbacks"]:before,.side a[href="/r/Braves"]:before,.side a[href="/r/Brewers"]:before,.side a[href="/r/Buccos"]:before,.side a[href="/r/Cardinals"]:before,.side a[href="/r/ColoradoRockies"]:before,.side a[href="/r/Cubs"]:before,.side a[href="/r/Dodgers"]:before,.side a[href="/r/KCRoyals"]:before,.side a[href="/r/letsgofish"]:before,.side a[href="/r/Mariners"]:before,.side a[href="/r/MinnesotaTwins"]:before,.side a[href="/r/MotorCityKitties"]:before,.side a[href="/r/Nationals"]:before,.side a[href="/r/NewYorkMets"]:before,.side a[href="/r/oaklandathletics"]:before,.side a[href="/r/Orioles"]:before,.side a[href="/r/Padres"]:before,.side a[href="/r/Phillies"]:before,.side a[href="/r/Reds"]:before,.side a[href="/r/RedSox"]:before,.side a[href="/r/SFGiants"]:before,.side a[href="/r/TampaBayRays"]:before,.side a[href="/r/TexasRangers"]:before,.side a[href="/r/TorontoBlueJays"]:before,.side a[href="/r/WahoosTipi"]:before,.side a[href="/r/WhiteSox"]:before,.side a[href="/r/Yankees"]:before,.wiki a[href="/r/AngelsBaseball"]:before {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-image: url(%%teamlogos%%);
+    background-position: -9999px -9999px;
+    vertical-align: middle;
+    margin-right: 3px;
+    content: "";
+}
+.side {
+    background-color: #FFF;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 5px #cecece;
+    box-shadow: 0px 2px 5px #cecece;
+    text-align: left;
+    padding: 3px;
+    color: #b31b1b;
+    width: 291px;
+    margin-top: 10px;
+}
+.side a {
+    color: #2e2e2e;
+    font-weight: 400;
+    background-color: transparent;
+}
+/* Search */
+#search {
+}
+#search input[type=text] {
+    margin: 17px 0px 0px 0px;
+    padding: 5px 0px 5px 40px;
+    width: 251px;
+    background-image: url(%%spritesheet%%);
+    background-position: -129px 0px;
+    background-repeat: no-repeat;
+    border: none;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    border-left: 2px solid #fff;
+    color: #999;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: arial, sans-serif !important;
+}
+#search input[type=text]:focus {
+    padding: 5px 0px 5px 40px;
+    width: 258px;
+    outline: none !important;
+    border: none;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    border-left: 2px solid #4285f4;
+    color: #000;
+}
+#searchexpando {
+    margin: 0px 0px 5px 0px;
+    padding: 5px 5px 0px 15px;
+    height: 25px;
+    background-color: #f5f5f5;
+    border: 0px solid;
+    border-bottom: 1px solid #DFDFDF;
+    border-radius: 0px;
+    color: #3b3b3b;
+    font-size: 150%;
+}
+
+.search-page form#search label {
+    font-size: 150%;
+    }
+#search_showmore {
+    display: none;
+}
+.side .spacer,.sidecontentbox .content {
+    border: 0!important;
+}
+/*Actual Post changes*/
+/*Spreads the posts out a bit more*/
+p {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+.tagline {
+    font-size: x-small;
+}
+p.tagline a:hover {
+    color: #00235d;
+}
+#preview {
+    float: right;
+    width: 20em;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+#preview span {
+    color: #fff;
+}
+#preview #previewbox {
+    border-width: .2em;
+    border-style: none;
+    border-color: #fff;
+    padding: 1em;
+}
+#preview-table > table {
+    border-width: .2em;
+    border-style: dashed;
+    border-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+.link .title {
+    font-weight: 400;
+}
+/* fancy comments*/
+.comment .title {
+    margin-top: 10px;
+}
+.commentarea .panestack-title {
+    display: none!important;
+}
+.content .menuarea .flat-list .selected a {
+    color: #FF4500!important;
+}
+.dropdown.lightdrop .selected {
+    color: #51a738!important;
+}
+.nestedlisting .tagline .expand {
+    color: #999!important;
+    position: relative!important;
+    overflow: hidden!important;
+}
+.nestedlisting .tagline .expand:hover {
+    background-color: transparent!important;
+}
+.comment .collapsed .expand {
+    color: #999!important;
+}
+.comment .collapsed .expand:hover {
+    background-color: transparent!important;
+}
+.nestedlisting .buttons a {
+    font-weight: 400!important;
+}
+.bottommenu {
+    color: #999;
+}
+.pagename {
+    color: #fefefe;
+    font-family: arial,verdana,helvetica,sans-serif;
+    text-transform: lowercase !important;
+}
+.pagename a {
+    color: #b31b1b;
+    text-transform: lowercase !important;
+    font-size: 24px;
+    background-color: white;
+    display: inline-block !important;
+    margin-right: .5em;
+    padding: 0 2px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.thing .title {
+    color: #B31B1B;
+    overflow: hidden;
+    padding: 0;
+}
+.nextprev {
+    color: red;
+    font-size: larger;
+    margin-top: 10px;
+}
+.domain {
+    font-size: 0px;
+    color: #FFF;
+}
+.domain a {
+    font-size: x-small;
+    color: #B31B1B;
+    background-color: white;
+    display: inline-block !important;
+    margin-right: .5em;
+    padding: 0 2px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.domain a:hover {
+    text-decoration: underline;
+    color: #191170;
+}
+.tagline {
+    color: #1F34B8;
+    font-size: x-small;
+}
+.tagline a {
+    color: #1F34B8;
+    text-decoration: underline;
+}
+.tagline a:hover {
+    text-decoration: underline;
+    color: #B31B1B;
+}
+.thumbnail img,.thumbnail.self {
+    background: url(%%thumb-angels%%);
+    padding-left: 0px;
+    border-right: 1px solid #FFF;
+    border-top: 0px solid;
+    border-bottom: 5px solid #d8d8d8;
+    border-radius: 11px;
+    width: 83px;
+    height: 70px;
+}
+.thumbnail.default {
+    background: url(%%selfdefault%%);
+    padding-left: 0px;
+    border-right: 1px solid #FFF;
+    border-top: 0px solid;
+    border-bottom: 5px solid #d8d8d8;
+    border-radius: 11px;
+    width: 83px;
+    height: 70px;
+}
+a.thumbnail[href*="twitter.com"] img {
+    display: none;
+}
+a.thumbnail[href*="twitter.com"] {
+    background: url(%%thumb-twitter%%);
+    width: 83px;
+    height: 70px;
+    display: block;
+    padding-left: 0px;
+    border-right: 1px solid #FFF;
+    border-top: 0px solid;
+    border-bottom: 5px solid #d8d8d8;
+    border-radius: 11px;
+}
+a.thumbnail[href*="mlb.com"] img {
+    display: none;
+}
+a.thumbnail[href*="mlb.com"] {
+    background: url(%%thumb-mlb%%);
+    width: 83px;
+    height: 70px;
+    display: block;
+    padding-left: 0px;
+    border-right: 1px solid #FFF;
+    border-top: 0px solid;
+    border-bottom: 5px solid #d8d8d8;
+    border-radius: 11px;
+}
+a.thumbnail[href*="baseball-reference.com"] img,a.thumbnail[href*="mlbtraderumors.com"] img {
+    display: none;
+}
+a.thumbnail[href*="baseball-reference.com"],a.thumbnail[href*="mlbtraderumors.com"] {
+    background: url(%%thumb-baseballref%%);
+    width: 83px;
+    height: 70px;
+    display: block;
+    padding-left: 0px;
+    border-right: 1px solid #FFF;
+    border-top: 0px solid;
+    border-bottom: 5px solid #d8d8d8;
+    border-radius: 11px;
+}
+/* spoiler begins */
+a[href="/s"] {
+    font-size: 0;
+    cursor: default;
+    visibility: hidden}
+a[href="/s"]: :after {
+    content: attr(title);
+    background: #cee3f8;
+    color: #cee3f8;
+    font-size: small;
+    padding: 0 0 0 0 !important;
+    visibility: visible}
+ a[href="/s"]:hover: :after, a[href="/s"]:active: :after {
+    color: black }
+.linkcompressed .midcol .arrow.down {
+    visibility: hidden;
+    display: none;
+}
+.thing .tagline .moderator {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+a[href$="/spoiler"] {
+    background: #000 !important;
+    color: #000 !important}
+a[href$="/spoiler"]:hover {
+    color: #FFF !important}
+.title a[href*="mlb.com"]:before {
+    content: url(%%mlb-icon%%) " "
+}
+#userbarToggle,.userbarhide {
+    background-color: #FFF;
+}
+.linkinfo,.infobar {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    border: 1px solid #AAA;
+}
+#RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash {
+    width: 16px;
+    color: white;
+    background-color: black;
+}
+#viewImagesButton {
+    display:none;
+}
+.modtools-on {
+    display: none;
+}
+/*barbie*/
+.flair-barbie {
+   background-position: 0 -1866px;
+   width: 26px; 
+   height: 29px; 
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+/* buttercup*/
+.flair-buttercup {
+    background-position: -175px -527px; width: 30px; height: 29px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+line-height: 26px;
+text-shadow: 1px 1px 1px #000;
+color: #FFF;
+}
+.flair-buttercup2 {
+    display: inline-block;
+background-position: -175px -581px; width: 30px; height: 24px; 
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-buttercup3 {
+  background-position: -175px -122px; width: 30px; height: 24px; 
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-buttercup4 {
+  background-position: -175px -171px; width: 30px; height: 24px;
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-harris {
+    background-position: -175px -261px; width: 37px; height: 47px;
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-wstrophy{
+    background-position: -175px -875px; width: 26px; height: 38px; 
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-autry {
+    background-position: 0 -1814px; 
+	width: 25px; 
+	height: 27px;
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-rallymonkey{
+    background-position: -175px -477px; width: 27px; height: 25px; 
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-trout{
+    background-position: -175px -685px; width: 25px; height: 32px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-sosh{
+    background-position: -175px -630px; width: 28px; height: 30px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-aden{
+   background-position: 0 -1726px; width: 26px; height: 26px; 
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-ltbu {
+ background-position: -175px -388px; width: 30px; height: 30px; 
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-wsring {
+    background-position: -175px -822px; width: 26px; height: 28px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+a[href|="/buttercup"] {
+    display: inline-block;
+    clear: none;
+    cursor: default;
+    background-image: url(%%teamlogos%%) !important;
+	background-position: 0 -1920px; width: 150px; height: 87px;
+}
+a[href|="/train2"] {
+    background-image: url(%%train%%);
+    animation: train 30s infinite;
+    -webkit-animation: train 30s infinite;
+    /*Safari and Chrome*/
+overflow: auto !important;
+    height: 90px!important;
+    width: 300px!important;
+    position: absolute;
+}
+a[href|="/buttercup2"] {
+    display: inline-block;
+    clear: none;
+    cursor: default;
+    background-image: url(%%teamlogos%%) !important;
+	background-position: -175px 0; width: 100px; height: 97px; 
+}
+/* LeftHover box */
+/* Content Banner */
+.titlebox h6: nth-of-type(1) {
+    display: block;
+    position: absolute;
+    top: 120px;
+    right: 325px;
+    left: 0px;
+    padding: 2px 0 2px 11px;
+    width: 549px;
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    color: #666;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.9;
+    color: #000;
+    z-index: 999999 !important;
+}
+.titlebox h6: nth-of-type(1) a {
+    color: #000;
+    font-weight: bold;
+}
+.titlebox h6: nth-of-type(1) a:hover {
+    border: none;
+    text-decoration: underline;
+}
+/* Fixed Scroll Banner */
+.titlebox h6: nth-of-type(2) {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 97;
+    height: 29px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 #c8c8c8;
+    box-shadow: 0 2px 4px 0 #c8c8c8;
+    color: #737373;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+}
+.titlebox h6: nth-of-type(2) a {
+    margin: 0px 30px;
+    padding-bottom: 4px;
+    color: #737373;
+}
+.titlebox h6: nth-of-type(2) a:hover {
+    border-bottom: 2px solid #5b92fa;
+    color: #262626;
+    text-decoration: none;
+}
+.link {
+    margin-right: auto;
+    margin-bottom: 7px;
+    padding: 8px 10px 6px 10px;
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+/* Stickied Link */
+.stickied.link {
+    border-bottom-color: #191170;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-image: url(%%blue%%);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    color: #191170;
+}
+.stickied.link a, .thing.stickied a.title, .thing.stickied a.title:visited, .thing.stickied a.title.visited {
+    color: #191170;
+}
+.stickied.link .arrow.down {
+    display: none;
+}
+/* Promoted Link */
+.organic-listing {
+    margin-right: auto;
+    border: 1px solid #D0D6DD;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+}
+.link .title {
+    font-weight: normal;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    line-height: 100%;
+}
+/* COMMENT SECTION */
+.linkinfo {
+    margin-top: -10px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d5d5d5;
+    color: #404040;
+}
+.commentarea {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #d8d8d8;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+    border-radius: 0px;
+    color: #3b3b3b;
+}
+.commentarea>.usertext {
+    overflow: visible;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+}
+a.author {
+    margin-right: 4px;
+    color: #5b92fa;
+}
+.comments-page .tagline {
+    color: #999;
+    font-size: small;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+.comments-page .tagline a {
+    margin-top: 1px;
+    background-color: transparent;
+    color: #5b92fa;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.tagline a:hover {
+    text-decoration: underline;
+}
+.tagline .submitter {
+    color: #dd4b39!important;
+}
+.tagline .moderator,.green {
+    color: #53a93f!important;
+}
+.tagline .moderator:after {
+    content: "oderator";
+}
+a.author.moderator:after {
+    content: "";
+}
+.tagline .moderator:hover {
+    color: #65b354!important;
+}
+.comment .midcol {
+    margin-top: 6px;
+    width: 15px !important;
+}
+.comment .score {
+    font-size: small;
+}
+/* Comments */
+.commentarea .menuarea {
+    display: inline;
+    padding: 0;
+    color: #c0c0c0;
+    font-weight: normal;
+    font-size: 110%;
+}
+.panestack-title {
+    display: inline;
+    border-bottom: 1px solid #e5e5e5;
+    color: #c0c0c0;
+}
+/*.commentarea .menuarea .toggle a, .panestack-title .title, .help-hoverable {
+    display: none;
+}
+*/
+.panestack-title .title {
+    display: none;
+}
+.menuarea .spacer {
+    margin-right: -15px;
+}
+.commentarea .menuarea .toggle a {
+    font-size: 11px;
+    color: #c0c0c0;
+    font-weight: normal;
+}
+.menuarea .spacer .drop-choices.lightdrop {
+    padding: 5px;
+    border-color: #DFDDDD;
+    box-shadow: 0px 1px 1px #C9C9C9;
+    font-family: arial, sans-serif;
+}
+.menuarea .spacer .drop-choices.lightdrop a.choice, .commentarea .menuarea form {
+    padding: 0.5px;
+    font-size: 14px;
+    color: #5b92fa;
+}
+.menuarea .spacer .drop-choices.lightdrop a.choice:hover, .commentarea .menuarea form:hover {
+    background-color: #5b92fa;
+    color: #fff;
+    text-decoration: none;
+}
+.menuarea .dropdown.lightdrop .selected {
+    background-image: none;
+    color: #3b3b3b;
+    text-decoration: none;
+    opacity: 10;
+    cursor: pointer;
+}
+.menuarea .dropdown.lightdrop .selected:hover {
+    color: #5b92fa;
+}
+.menuarea .dropdown.lightdrop .selected:after {
+    content: " ≡";
+    vertical-align: middle;
+    opacity: 0.5;
+}
+.comments-page .comment .md {
+    color: #161616;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5em;
+}
+hr {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+}
+.comments-page textarea {
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    color: #999;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+.comments-page textarea:hover {
+    border-color: #bebebe;
+}
+.comments-page textarea:focus {
+    border: 1px solid #4d90fe;
+    color: #000;
+}
+.usertext .help-toggle, .usertext a.reddiquette {
+    font-size: 100%;
+}
+.usertext a.reddiquette {
+    color: #DD4B39;
+}
+.comments-page .usertext.border .usertext-body {
+    padding-left: 5px;
+    background-color: #f0f0f0;
+}
+.comment .expand {
+    background-color: transparent;
+    color: #999 !important;
+}
+.comment .expand:hover {
+    background-color: transparent;
+    color: #999 !important;
+    text-decoration: underline;
+}
+.comment .child,.comment .showreplies {
+    margin-top: 10px;
+    margin-left: 15px;
+    border-left: 0px solid;
+}
+a[href*="game_thread"].thumbnail.self {
+    background: transparent url(%%gamethreadupdate%%) no-repeat 0 0;
+    width: 83px;
+    height: 70px;
+    border-right: 1px solid #FFF;
+    border-top: 0px solid;
+    border-bottom: 5px solid #d8d8d8;
+    border-radius: 11px;
+}
+.thumbnail {
+    border-radius: 3px;
+}
+.thing.stickied a.title {
+    font-weight: bold;
+    color: #b31b1b;
+}
+.thumbnail img {
+    width: auto;
+    height: 40px;
+}
+link .expando .usertext .md {
+    background: #ebeef0;
+ }
+.link .expando .usertext .md table {
+    width: 95%;
+}
+.link .expando .usertext a[href*="mlb.com"]:before {
+    content: url(%%mlb-icon%%);
+    font-weight: bold;
+}
+.link .expando .usertext a[href*="angelsbaseball.nium.co"]:before {
+    content: url(%%chat%%);
+    font-weight: bold;
+}
+.usertext-edit textarea {
+    color: #2e2e2e;
+    background-color: #FFF;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+    color: #2e2e2e;
+}
+.usertext-edit textarea,.usertext-edit {
+    width: 408px;
+}
+/*red upvotes! */
+.arrow.upmod {
+    background-image: url(%%upvote%%);
+    width: 15px; height: 14px; 
+display:block;
+background-position: 0 0;}
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+    font-size: medium;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    border: 0}
+/* awesome tables */
+.md table {
+    margin-top: 7px !important;
+    margin-bottom: 10px;
+    width: 95%;
+    box-shadow: 2px 2px 2px #ccc;
+    border-left: 1px solid #E8E8E8;
+    background-color: white;
+}
+.md thead {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.md tr: nth-of-type(odd) {
+    background: #f7f6f6;
+    color: #363636}
+.md tr: nth-of-type(even) {
+    background: #fff;
+    color: #363636}
+.side .md table: nth-of-type(odd) th {
+    background-color: #369;
+    border: none;
+}
+.md table th {
+    background-color: #369;
+    background-image: linear-gradient(to bottom,#428bca 0,#357ebd 100%);
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    color: #fff;
+    padding: .5em;
+    text-align: center;
+    text-shadow: 1px 0px 0 #27262c}
+.side .md table: first-of-type tr:hover {
+    background-image: url(%%6%%) !important}
+.md table td {
+    border: 1 px solid #428bca;
+    border-top: none;
+    border-right: none;
+    padding: .2em;
+    vertical-align: middle;
+    font-size: .9em;
+    letter-spacing: .5px;
+    color: #000000}
+.md table a {
+    border: 0px;
+    font-weight: bold;
+    color: #222}
+.side .md table td: nth-of-type(1) {
+    color: #2e2e2e;
+}
+.md table a:hover {
+    color: #0f326a}
+div.side div.spacer div.titlebox div.usertext-body div.md h4 {
+    font-size: 9px;
+    margin-top: -9px;
+    margin-left: 35%;
+    margin-right: 30%;
+    color: #ccc}
+.link .usertext .md {
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+
+/* Approved bloggers------------------------------------------------------------------ */
+a.author[href$="/monkeywithahalo"]:after,a.author[href$="/FatMexKid"]:after,a.author[href$="/dukiduke"]:after {
+    color: silver;
+    content: url(%%approved%%);
+	
+	 width: 12px; 
+	 height: 12px;
+}
+a.author[href$="/monkeywithahalo"]:hover:after,a.author[href$="/FatMexKid"]:hover:after,a.author[href$="/dukiduke"]:hover:after {
+    color: #C5B358;
+    content: " Approved Blogger";
+}
+/* This gem is from jamt9000 */
+/* Positioning a new tab up top */
+.titlebox .usertext-body .md ol li a {
+    background-color: #FFF;
+    border: 0px solid #C8C864;
+    color: #191170;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-decoration: underline;
+}
+.titlebox .usertext-body .md ol li a:hover {
+    background-color: #FFF;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+    color: #2e2e2e;
+    text-decoration: underline;
+}
+.titlebox form {
+    position: static}
+.titlebox .usertext-body .md ol {
+    list-style: none;
+    position: absolute;
+    top: 90px;
+    left: 1px;
+    z-index: 90001111;
+    margin: 0;
+    padding: 0;
+    display: table;
+}
+.titlebox .usertext-body .md ol li {
+    display: inline;
+    margin: 0 3px;
+    background-color: #FFF;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+    color: #2e2e2e;
+    text-decoration: underline;
+}
+.titlebox .usertext-body .md ol li a {
+    background: transparent;
+    padding: 2px 6px 2px;
+    color: #2e2e2e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small}
+.md blockquote, .help blockquote {
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+    background-color: #FFF;
+}
+.res_post_ups {
+    color: #B31B1B;
+}
+.entry .buttons li a {
+    color: #369;
+}
+.error {
+    background-color: #FFF;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.tabmenu: not(li) {
+    opacity: 0.9;
+}
+.footer {
+    background-color: white;
+    display: inline-block !important;
+    margin-right: .5em;
+    padding: 0 2px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+    color: #FFF;
+}
+.flat-vert.title {
+    color: #191170;
+}
+.footer a {
+    color: #b31b1b;
+    text-decoration: underline;
+}
+/* Submit Page */
+form#newlink.submit.content {
+    margin-top: 105px;
+}
+.submit-page .infobar {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    border-top: 0px;
+    border-bottom-width: 3px;
+    border-radius: 3px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #3b3b3b;
+    text-align: center;
+    text-indent: -9999px;
+    font-size: 0px;
+}
+.formtabs-content .infobar:before {
+    display: block;
+    text-indent: 0px;
+    font-size: 16px;
+}
+.submit-page .tabmenu li a {
+    margin: 0px;
+}
+.submit-page ul.tabmenu.formtab {
+    padding-left: 0px;
+    width: 500px;
+    text-align: center;
+}
+.formtabs-content {
+    padding-top: 0px;
+    border-top: 4px solid #5b92fa;
+}
+.submit-page .tabmenu.formtab a {
+    padding: 5px 55px 0px 55px;
+    width: 100px;
+    background-color: white;
+    border: 0px solid;
+    color: #5b92fa;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+.submit-page .tabmenu li a:hover {
+    color: #333;
+}
+.submit-page .tabmenu.formtab .selected a {
+    padding: 5px 60px 0px 60px;
+    background-color: #5b92fa;
+    color: #fff;
+    font-size: 18px;
+}
+.roundfield {
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+    border-radius: 3px;
+    color: #707070;
+}
+.submit-page textarea, .roundfield input[type=url], .roundfield input[type=text], .login-form-side input[type=text], .login-form-side input[type=password],.linefield textarea, .linefield input[type="text"], .flairlist .flaircell input[type="text"], .linkinfo .shortlink input, .search-page #search input[type=text] {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #333;
+    font-size: 100%;
+    font-family: arial, sans-serif;
+}
+.submit-page textarea:hover, .roundfield input[type=url]:hover, .roundfield input[type=text]:hover, .login-form-side input[type=text]:hover, .login-form-side input[type=password]:hover,.linefield textarea:hover, .linefield input[type="text"]:hover, .flairlist .flaircell input[type="text"]:hover, .linkinfo .shortlink input:hover, .search-page #search input[type=text] {
+    border: 1px solid #bebebe;
+}
+.submit-page textarea:focus, .roundfield input[type=url]:focus, .roundfield input[type=text]:focus, .login-form-side input[type=text]:focus, .login-form-side input[type=password]:focus,.linefield textarea:focus, .linefield input[type="text"]:focus, .flairlist .flaircell input[type="text"]:focus, .linkinfo .shortlink input:focus, .search-page #search input[type=text] {
+    border: 1px solid #4d90fe;
+    color: #000;
+}
+.linefield .usertext-edit textarea {
+    height: 500px;
+}
+.submit-page .content textarea, .submit-page .content input[type=url], .submit-page .content input[type=text] {
+    width: 488px;
+}
+.submit-page .content button {
+    margin-bottom: 30px;
+    margin-left: 0px;
+    padding: 10px 10px 10px 10px;
+    width: 522px;
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    border-radius: 3px;
+    color: #707070 !important;
+    text-align: center;
+    cursor: pointer;
+}
+.submit-page button:hover {
+    background-color: #5b92fa;
+    color: white !important;
+}
+.submit-page button:active {
+    background-color: #315fb2;
+}
+.submit-page h1 {
+    display: none;
+}
+.submit-page .side h1 {
+    display: inherit;
+}
+.content.submit .info-notice {
+    margin: 0px 0px 4px 0px;
+    padding: 20px 10px 20px 10px;
+    background-color: white;
+    border: 1px solid #d8d8d8;
+    border-top-width: 0px;
+    border-bottom-width: 3px;
+    border-radius: 3px;
+    color: #707070;
+    text-align: center;
+}
+.content.submit .info-notice a {
+    text-decoration: none;
+    font-size: 120%;
+}
+.content.submit .info-notice a:hover {
+    text-decoration: underline;
+}
+.thing.spam {
+    border-color: #F3B9B9;
+    background-color: #fff;
+    margin-right: auto;
+}
+#file {
+    margin: 10px;
+}
+.submit-page .gray, #url-field button, #suggested-reddits {
+    display: none;
+}
+.submit-page form .spacer+.spacer {
+    margin: 8px 0px;
+}
+.listing-page .link .flair,.sidecontentbox .flair {
+    display: none}
+.flair {
+    vertical-align: middle;
+}
+#RESAccountSwitcherDropdown {
+    z-index: 999999 !important;
+}
+/* Picture of the Week*/
+/* How To - Upload a picture and name it featured under new image name*/
+/* background position is how it is centered - other valuesleft topleft centerleft bottomright topright centerright bottomcenter topcenter centercenter bottom*/
+/* Change padding top value to correct image height*/
+/* Change Text after Picture of the Week: , make sure to keep parenthesis
+ .titlebox {
+    background-image: url(%%westchamps%%) !important;
+    background-position: top center;
+    background-repeat: no-repeat !important;
+    padding-top: 240px}
+.titlebox:before {
+    content: " ";
+    font-weight: bold;
+    color: #FFF;
+    font-size: 9px;
+    background-color: transparent }
+ */
+/* .content:before {
+    content: url(%%warning%%) " You're not subscribed to r/angelsbaseball yet! Subscribe on the right!.";
+    margin: 4px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+    background-color: #FFF;
+}
+ .subscriber .content:before {
+    content: " " !important;
+    background: transparent !important;
+}
+.side .content:before {
+    content: " " !important }
+*/
+.fancy-toggle-button .add {
+    background-image: none;
+    background-color: green;
+    background-repeat: repeat;
+    margin: 10px;
+    padding: 10px;
+    line-height: 82px;
+}
+/* RES is being a dick */
+#REScommentNavToggle {
+    display: none!important;
+}
+.thing.comment {
+    margin-top: 16px !important;
+}
+.content {
+    margin-left: 10px}
+.titlebox h6: nth-of-type(1) a:hover {
+    border: 0;
+    text-decoration: underline}
+.titlebox h6: nth-of-type(2) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 97;
+    height: 29px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 #c8c8c8;
+    box-shadow: 0 2px 4px 0 #c8c8c8;
+    color: #737373;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px}
+.titlebox h6: nth-of-type(2) a {
+    margin: 0 30px;
+    padding-bottom: 4px;
+    color: #737373}
+.titlebox h6: nth-of-type(2) a:hover {
+    border-bottom: 2px solid #8b008b;
+    color: #262626;
+    text-decoration: none}
+.link {
+    margin-bottom: 7px;
+    padding: 8px 10px 6px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-top: 0 solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px}
+/* temp disabled
+@media only screen and (max-width: 700px), only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    .side {
+    display: none;
+}
+
+.content {
+    margin-top: 31px;
+}
+}
+*/
+#header-bottom-left #header-img-a:hover {
+}
+
+#header-bottom-right {
+    position: absolute;
+    top: 24px;
+    right: 0px;
+    padding: 8px 15px 7px 15px;
+    width: auto;
+    height: 15px !important;
+    background-color: #fff;
+}
+.user {
+    color: #7A7A7A;
+}
+.loggedin .user {
+    color: #7A7A7A;
+}
+#header-bottom-right a {
+    color: #7A7A7A;
+    font-weight: normal;
+    font-size: 15px;
+}
+#header-bottom-right a:hover {
+    border-bottom: 1px solid #5b92fa;
+    color: #333;
+    text-decoration: none;
+}
+/* Mail / Modmail icons */
+#mail {
+    top: 0px;
+    overflow: visible;
+    width: 16px;
+    height: 16px;
+    background-image: url(%%spritesheet%%) !important;
+}
+#mail:hover, #modmail:hover {
+    border-bottom: 0px solid !important;
+}
+#mail.nohavemail {
+    background-position: -64px 0px;
+}
+#mail.havemail {
+    background-position: -80px 0px;
+}
+#mail.havemail:before, #modmail.havemail:before {
+    display: block;
+    visibility: visible !important;
+    position: fixed;
+    top: 4px;
+    right: 10px;
+    z-index: 2;
+    z-index: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    background-image: url(%%spritesheet%%);
+    background-position: -126px -50px;
+    border-radius: 50%;
+    content: " ";
+}
+#modmail {
+    top: -2px;
+    margin-bottom: -6px;
+    width: 16px;
+    height: 16px;
+    background-image: url(%%spritesheet%%) !important;
+}
+#modmail.havemail {
+    background-position: -112px 0px;
+}
+#modmail.nohavemail {
+    background-position: -96px 0px;
+}
+#modmail.havemail:before {
+    background-position: -151px -50px;
+    margin-right: 40px;
+}
+/* Preferences & Logout Icons */
+#header-bottom-right a.pref-lang, .loggedin .logout a {
+    background-position: -96px -49px;
+    background-image: url(%%spritesheet%%);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin: 0px;
+    position: relative;
+    top: -2px;
+}
+.loggedin .logout a {
+    background-position: -80px -49px;
+}
+.gearIcon {
+    background-image: url(%%spritesheet%%)!important;
+    background-position: -80px -65px!important;
+    height: 16px!important;
+    width: 17px!important;
+}
+/* Opacity Hoves */
+#modmail, #mail, .gearIcon, #header-bottom-right a.pref-lang, .loggedin .logout a {
+    opacity: 0.75;
+}
+#modmail:hover, #mail:hover, #header-bottom-right a.pref-lang:hover, .loggedin .logout a:hover, .gearIcon:hover {
+    opacity: 1;
+    text-decoration: none !important;
+    border-bottom: 0px solid !important;
+}
+p.sponsored-tagline:before {
+    content: "/r/angelsbaseball thanks you for supporting reddit! - ";
+}
+span.stickied-tagline {
+    color: #191170 !important;
+    font-weight: bold;
+    border: 1px solid #191170;
+    border-radius: 2px;
+    padding: 4px;
+}
+.comments-page .tagline {
+    color: #2e2e2e;
+}
+span.rank, .link.rank {
+    margin: 0px !important;
+    text-align: left !important;
+    color: #2e2e2e;
+    font-weight: bold;
+}
+a.comments {
+    font-size: 12px;
+    background-color: white;
+    display: inline-block !important;
+    margin-right: .5em;
+    padding: 0 2px;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+li.share {
+    display: none !important;
+}
+.flair-laapad{
+    background-image: url(%%laapad%%) !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 45px !important;
+    height: 27px !important;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
+.flair-lightwave{
+    background-position: -175px -333px; 
+	width: 30px; 
+	height: 30px; 
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #d8d8d8;
+    border-top: 0px solid;
+    border-bottom: 3px solid #d8d8d8;
+    border-radius: 3px;
+}
