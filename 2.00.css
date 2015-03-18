@@ -1,0 +1,1444 @@
+/* =============================================================== */
+/*===============angelsbaseballtheme v 2.00 by laaabaseball ==============*/
+/*     questions about this theme? just message laaabaseball       */
+/* using something in this theme? Let me know! http://redd.it/vkaqg*/
+/* =============================================================== */
+
+/* =============================================================== */
+/* === SUBREDDIT HEADER AND SIDEBAR IMAGE - EDIT IN HERE ==========*/
+
+/* ==============PICTURE OF THE WEEK (SIDEBAR IMAGE)==============*/
+.listing-page .titlebox {
+/* =============================================================== */
+/* How To - Upload a picture and name it featured (under new image name)*/
+/* CHANGE this padding-top value to correct image height*/
+/* =============================================================== */
+	padding-top:350px!important;
+/* =============================================================== */
+}
+.listing-page .titlebox:before {
+/* =============================================================== */
+/* Want a caption for the image? Change text after the word content */
+/* inside the parenthesis making sure to leave the parenthesis intact*/
+/* =============================================================== */
+content:" Trout and Bourjos ";
+/* =============================================================== */
+}
+/* =============================================================== */
+/* HEADER IMAGE INSTRUCTIONS */
+/* =============================================================== */
+/*For the main image: upload an image called header make sure its height is 123 pixels  */
+/* =============================================================== */
+/*For the background image: upload an image called header-bg make sure  */
+/* its height is 123 pixels and it is at least 1032 pixels wide */
+/* =============================================================== */
+
+
+
+
+/* =============================================================== */
+/* ===== Don't venture below unless you know what you're doing === */
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+/* =============================================================== */
+/* =========================I warned you======================== */
+
+.listing-page .titlebox {
+	background-image:url(%%poster%%);
+	background-position: top ;
+	background-repeat:repeat-x;
+}
+.listing-page .titlebox:before {
+	font-weight:700;
+	color:#FFF;
+	background-color:transparent;
+	border-radius:3px;
+	font-size:11px;
+	text-shadow:1px 1px 1px black,-1px -1px 1px black,-1px 1px 1px black,1px -1px 1px #000;
+}
+
+/*new header image*/
+#header {
+/*this is the header image background don't change this*/
+background-image: url(%%headerbg3%%);
+background-repeat: repeat;
+background-position: center center;
+height: 141px;
+border: 0;
+font-family: Georgia,serif;
+font-size: 12px;
+background-color: #069;
+}
+#header-bottom-left  {
+/*upload an image called header make sure its height is 123 pixels (disabled so transparent image)  */
+background-image: url(%%trans%%);
+height: 123px;
+background-repeat: no-repeat;
+background-position: bottom center;
+}
+/* reddit logo */
+#header-bottom-left #header-img-a {
+display:block;
+ background: url(%%rangels%%);
+     height: 43px;
+    width: 120px;
+    position: absolute;
+    top: 15px;
+    left: 11px
+    }
+#header-bottom-left #header-img-a img {
+    display: none;
+    }
+	
+/*smaller text size*/
+.link .title {
+	font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+	line-height:18px;
+	font-size:14px!important;
+}
+span[class="hover pagename redditname"] a {
+font-size: 1em !important;
+}
+
+	
+/*number of subscriber and users here now*/
+.titlebox .word {
+	display:none;
+}
+
+.titlebox .number:after {
+	content:" baseball players";
+}
+
+.titlebox .users-online span.number:after {
+	content:" at bat";
+}
+.titlebox .usertext-body a:hover{
+color:#191170;
+background-color:#f2f2f2;
+text-decoration:underline;
+}
+.titlebox form.toggle, .leavemoderator{
+background:transparent !important;
+}
+#header-bottom-left {
+height: 22px;
+margin-top: 76px;
+}
+/* smoothing of top tabs  */
+.tabmenu li a {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px
+    }
+.link .expando .usertext .md {
+    border:1px solid #AAA;
+   background: url(%%bg%%) repeat transparent !important;
+
+    }
+
+.link .expando .usertext .md table{
+width:95%;
+}
+.link .expando .usertext a[href*="mlb.com"]:before {
+content:url(%%mlb-icon%%);
+font-weight:bold;
+}
+.pagename a {
+   font-size:17px;
+font-weight:bold;
+color:#B31B1B;
+background:#FFF;
+display:inline-block;
+ margin-right:.5em;
+ padding:0px;
+ border:1px solid #ddd;
+ border-radius:2px;
+}
+	
+/*Actual Post changes*/
+/*Spreads the posts out a bit more*/
+
+p {
+	margin-top:3px;
+	margin-bottom:5px;
+}
+
+.tagline {
+	font-size:x-small;
+}
+
+p.tagline a:hover {
+	color:#00235d;
+}
+
+.domain {
+	font-size:0;
+	color:#FFF;
+}
+
+.domain a {
+	font-size:x-small;
+	background-color:#FFF;
+	display:inline-block!important;
+	margin-right:.5em;
+	padding:0 2px;
+	border:1px solid #ddd;
+	border-radius:2px;
+}
+
+.domain a:hover {
+	text-decoration:underline;
+}
+
+#preview {
+	float:right;
+	width:20em;
+	margin-right:10px;
+	margin-top:3px;
+	margin-bottom:5px;
+}
+
+#preview span {
+	color:#fff;
+}
+
+#preview #previewbox {
+	border-width:.2em;
+	border-style:none;
+	border-color:#fff;
+	padding:1em;
+}
+
+#preview-table > table {
+	border-width:.2em;
+	border-style:dashed;
+	border-color:lightgray;
+	padding:5px;
+	margin:5px;
+	width:100%;
+}
+
+.link .title {
+	font-weight:400;
+}
+
+
+	
+/* fancy comments*/
+.comment .title {
+	margin-top:10px;
+}
+
+.commentarea .panestack-title {
+	display:none!important;
+}
+
+.content .menuarea .flat-list .selected a {
+	color:#FF4500!important;
+}
+
+.dropdown.lightdrop .selected {
+	color:#51a738!important;
+}
+
+.nestedlisting .tagline .expand {
+	color:#999!important;
+	position:relative!important;
+	overflow:hidden!important;
+}
+
+.nestedlisting .tagline .expand:hover {
+	background-color:transparent!important;
+}
+
+.comment .collapsed .expand {
+	color:#999!important;
+}
+
+.comment .collapsed .expand:hover {
+	background-color:transparent!important;
+}
+
+.nestedlisting .buttons a {
+	font-weight:400!important;
+}
+
+
+	
+/* remove create/submit bar and change colors of submit*/
+.titlebox .tagline {
+background-color:white;
+border-radius:4px;
+padding:2px;
+border:1px solid #C8C864;
+}
+
+
+.sidebox.create{
+	display:none;
+}
+
+/* message the moderators link*/
+.sidecontentbox a.helplink {
+float: right;
+margin-top: 2px;
+background-color:#FFFFDC;
+border:1px solid #C8C864;
+border-radius: 4px;
+padding: 2px;
+}
+
+	
+/* top menu tabs*/
+.tabmenu li.selected a {
+	border-style:solid;
+	border-width:0;
+	color:#FFF;
+	z-index:100;
+	background-color:#257;
+}
+
+.tabmenu li a {
+	-moz-border-radius-topleft:4px;
+	-webkit-border-top-left-radius:4px;
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;
+	color:#fff;
+	background-color:#257;
+}
+
+.tabmenu li a:hover {
+	background-color:#257;
+}
+
+.tabmenu li.selected a:hover {
+	background-color:#257;
+}
+
+.bottommenu {
+	color:#999;
+	font:normal 10px Tahoma,Arial,sans-serif;
+}
+
+.pagename {
+	color:#fefefe;
+}
+
+h1.redditname > a {
+	color:#FFF;
+}
+.titlebox .usertext .md > h1:after,.titlebox .redditname:after,.sidecontentbox .title h1:after,.sidecontentbox.collapsible.title h1:after {
+	display:block;
+	content:"";
+
+	
+/* Grey Corner */
+
+	border-color:transparent gray transparent transparent;
+	border-style:solid;
+	border-width:15px;
+	height:0;
+	width:0;
+	position:absolute;
+	z-index:-1;
+	margin-left:-35px;
+	margin-top:-9px;
+}
+
+	
+
+.thing .title {
+    color: #B31B1B;
+    overflow: hidden;
+    padding: 0;
+}
+.thing .title:visited {
+    color: #B31B1B;
+}
+.thing .title.click {
+    color: #B31B1B;
+}
+.thing .title.loggedin {
+    color: #B31B1B;
+}
+.thing .title.loggedin:visited {
+    color: #B31B1B;
+}
+.thing .title.loggedin.click {
+    color: #B31B1B;
+}
+.thing .title.loggedin.click:visited {
+    color: #B31B1B;
+}
+.nextprev {
+    color: red;
+    font-size: larger;
+    margin-top: 10px;
+}
+.domain {
+   font-size:0px;
+color:#FFF;
+}
+.domain a {
+font-size:x-small;
+ color:#B31B1B;
+background-color:white;
+display:inline-block !important;
+ margin-right:.5em;
+ padding:0 2px;
+ border:1px solid #ddd;
+ border-radius:2px;
+}
+.domain a:hover {
+    text-decoration: underline;
+color: #191170;
+
+}
+.tagline {
+    color: #1F34B8;
+    font-size: x-small;
+}
+.tagline a {
+    color: #1F34B8;
+    text-decoration: underline;
+}
+.tagline a:hover {
+    text-decoration: underline;
+color: #B31B1B;
+}
+
+#sr-header-area,#RESShortcutsViewport{
+background: #000 !important;
+color:#FFF;
+border: none !important;
+}
+#sr-header-area a{
+color:#FFF;
+}
+.thumbnail img,.thumbnail.self {
+background: url(%%thumb-angels%%);
+    padding-left: 0px;
+ 
+border-radius:5px;
+width:83px;
+height:70px;
+    }
+.thumbnail.default {
+background:url(%%selfdefault%%);
+padding-left: 0px;
+ 
+border-radius:5px;
+width:83px;
+height:70px;
+}
+
+
+/* spoiler begins */
+ a[href="/s"] { 
+font-size: 0; cursor: default; visibility: hidden 
+} 
+a[href="/s"]::after { content: attr(title); 
+background: #cee3f8; 
+color: #cee3f8; font-size: small; padding: 0 0 0 0 !important; visibility: visible 
+} a[href="/s"]:hover::after, a[href="/s"]:active::after { color: black }  
+.linkcompressed .midcol .arrow.down { 
+visibility: hidden; 
+display: none;
+ } 
+.thing .tagline .moderator {
+-moz-border-radius:7px;
+ -webkit-border-radius:7px;
+ border-radius:7px;
+
+}
+a[href$="/spoiler"] {
+    background: #000 !important;
+    color: #000 !important
+    }
+a[href$="/spoiler"]:hover {
+    color: #FFF !important
+    }
+
+.title a[href*="mlb.com"]:before{
+content:  url(%%mlb-icon%%) "   ";
+
+}
+/*Custom Header bottom right menu*/
+#header-bottom-right {
+    position: absolute;
+ background: url(%%bg%%) !important;
+border: 1px solid #AAA;
+       color: #191170;
+    padding: 2px !important;
+    border-radius: 7px;
+z-index: 9999999;
+    }
+#header-bottom-right a,.user .userkarma,#header-bottom-right b {
+    color: #191170
+    }
+.linkinfo,.infobar {
+background: url(%%bg%%) repeat transparent !important;
+border-radius:5px;
+border: 1px solid #AAA;
+}
+
+.usertext-edit textarea {
+    background-color: #FFFEE6;
+    border: 1px solid #E1B000;
+    color: #2e2e2e
+    }
+#RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash {
+width: 16px;
+color: white;
+background-color: black;
+}
+
+
+
+.sidecontentbox .content {
+    margin: 0px !important;
+    font-size: 9pt !important;
+    padding: 5px 0 0 0 !important;
+    background-color: transparent !important;
+    border: 0 !important
+    }
+.icon-menu a, .sidebox.create .spacer, .sidebox .subtitle, .sidebox.submit .spacer, .titlebox form.toggle {
+    background-color: transparent
+    }
+.footer {
+    background: url(%%bg%%) repeat transparent !important;
+    padding: 10px;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+    }
+.footer .col {
+    border: 0 !important
+    }
+.footer a {
+    color: #616f99 !important
+    }
+.comment a[href*="mlb.com"] {
+    font-weight: bold;
+    padding-left: 21px;
+    background: url(%%mlb-icon%%) 0 50% no-repeat;
+    }
+
+/*sticky menu bar*/
+
+/*hack to enable positioning of child elements*/
+.titlebox form {
+    position: static
+    }
+/*turns top quote in sidebar into menu container*/
+.titlebox blockquote:first-child {
+    border-left: none;
+    position: absolute;
+    z-index: 9999;
+    top: 13px;
+    left: 115px
+    }
+/*turns first paragraph into menu title*/
+.titlebox blockquote:first-child p:first-child {
+margin-top: 0px;
+padding: 0px;
+float: left;
+font-size: 12px;
+font-weight: bold;
+color: black;
+display: inline-block;
+margin-right: .5em;
+border-radius: 2px;
+cursor:default;
+border: 1px solid #E1B000;
+background-color: #FDFACE !important;
+}
+/*turns the lists into menus*/
+.titlebox blockquote ul {
+float: right;
+padding: 0px;
+border: 1px solid #E1B000;
+background-color: #FDFACE !important;
+margin:0px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+.titlebox blockquote ul li {
+display: none;
+padding:2px;
+text-align:center;
+font-weight:bold;
+color: #790001;
+}
+.titlebox blockquote li a {
+display:block;
+font-weight:normal;
+text-transform: none !important;
+color: black;
+}
+.titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
+display: block
+}
+.titlebox blockquote li:first-child {
+font-size: 15px;
+font-weight: bold;
+color: #B31B1B;
+background: transparent;
+display: inline-block;
+margin-right: .5em;
+padding: 0 0px;
+border: 0px solid #DDD;
+border-radius: 5px;
+cursor:default;
+}
+/*styling menu items*/
+.titlebox blockquote:first-child ul li:hover {
+background:#FFF;
+border-radius:5px;
+}
+.titlebox blockquote li a:hover {
+color:#000;
+}
+/*custom size for menu sections*/
+.titlebox blockquote ul:nth-of-type(1) {width:170px;}
+.titlebox blockquote ul:nth-of-type(2) {width:170px;}
+
+/* Sidebox */
+.titlebox blockquote:first-child a:hover {
+	color:#000;
+}
+
+.sidecontentbox .title h1 {
+	display:block;
+}
+
+.side {
+	background-color:#E5E5E5;
+        background:url(%%bg%%);
+	padding:3px;
+	border:1px solid #AAA;
+	border-radius:10px;
+}
+
+.sidecontentbox {
+	background-color:#FFF;
+
+	padding:3px;
+	border:1px solid #AAA;
+	border-radius:10px;
+	font-size:8.5pt!important;
+}
+
+.sidecontentbox ul.content li {
+	font-size:small;
+	margin-bottom:2px;
+}
+
+
+/*red upvotes! */
+.arrow.upmod {
+    background-image: url(%%upvote%%);
+    background-position: 0 0
+    }
+.link .score.likes {
+    color: #D94141;
+    }
+
+.sidecontentbox .content {
+    border: none;
+    background-color: #703b25;
+    
+    background-position: top center;
+    background-repeat: no-repeat
+    }
+.side .md p {
+    text-shadow: 1px 1px #f9f9f9;
+    color: #000
+    }
+.side .md ul {
+    padding: 6px;
+    text-shadow: 1px 1px #f9f9f9;
+    color: #000;
+    list-style: decimal outside none
+    }
+.icon-menu a {
+    background-color: transparent
+    }
+.titlebox {
+    padding: 10px;
+padding-left: 3px !important;
+    border: 1px solid #AAA;
+    color: #777;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+    }
+.titlebox .bottom {
+    border: 0
+    }
+.titlebox form.toggle {
+    background-color: transparent
+    }
+.titlebox .usertext {
+    margin: 15px 0;
+    line-height: 120%;
+    font-size: small
+    }
+.titlebox .usertext .md {
+    margin: 0;
+    padding: 0;
+    overflow: visible
+    }
+.titlebox .usertext .md h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333
+    }
+.titlebox .usertext .md > h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #B31B1B;
+    color: #FFF;
+    padding: 5px 10px;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: -11px;
+    margin-left: -18px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    z-index: 100
+    }
+h1.redditname {
+ border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #B31B1B;
+    color: #FFF;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: -11px;
+    margin-left: -3px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    z-index: 100
+}
+h1.redditname > a {
+color: #FFF;
+}
+
+.sidecontentbox .title h1,.sidecontentbox.collapsible.title h1 {
+ border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #B31B1B;
+    color: #FFF;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: -44px;
+    margin-left: -18px;
+    border-bottom: 1px solid #000;
+   margin-bottom: 1px;
+margin-top: 1px;
+text-transform: lowercase !important;
+height: 23px;
+font-size: medium;
+font-weight: bold;
+font-family: arial,verdana,helvetica,sans-serif;
+    z-index: -1;
+width:262px;
+}
+.sidecontentbox .collapse-button {
+float:right;
+}
+.sidecontentbox .title h1:after {
+    display: block;
+    content: "";
+    border-color: transparent #B31B1B transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    z-index: -1;
+margin-left: -34px;
+margin-top: -17px;
+    }
+/* curved headers */
+.titlebox .usertext .md > h1:after {
+    display: block;
+    content: "";
+    border-color: transparent #B31B1B transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    z-index: -1;
+    margin-left: -35px;
+    margin-top: -10px
+    }
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+    font-size: medium;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    border: 0
+    }
+header-bottom-left {
+font-size: larger;
+padding-top: 58px !important;
+}
+/* awesome tables - credit to r/texasrangers */
+.md table {
+    margin-top: 7px !important;
+    margin-bottom: 10px;
+    width: 95%;
+    box-shadow: 2px 2px 2px #ccc;
+    border-left: 1px solid #E8E8E8;
+    background-color: white;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px
+    }
+.md tr:nth-of-type(odd) {
+    background: #f7f6f6;
+    color: #363636
+    }
+.md tr:nth-of-type(even) {
+    background: #fff;
+    color: #363636
+    }
+.side .md table:nth-of-type(odd) th {
+    background-color: #369;
+    border: none;
+    }
+.md table th {
+    background-color: #369;
+    border: none;
+    color: #fff;
+   
+    padding: .5em;
+    text-align: center;
+    text-shadow: 1px 0px 0 #27262c
+    }
+.side .md table:first-of-type tr:hover {
+    background-image: url(%%6%%) !important
+    }
+.md table td {
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #E8E8E8;
+    border-right: none;
+    padding: .2em;
+    vertical-align: middle;
+    font-size: .9em;
+    letter-spacing: .5px;
+    color: #000000
+    }
+.md table a {
+    border: 0px;
+    font-weight: bold;
+    color: #222
+    }
+.side .md table td:nth-of-type(1) {
+    color:#2e2e2e;
+    }
+.md table a:hover {
+    color: #0f326a
+    }
+div.side div.spacer div.titlebox div.usertext-body div.md h4 {
+    font-size: 9px;
+    margin-top: -9px;
+    margin-left: 35%;
+    margin-right: 30%;
+    color: #ccc
+    }
+.tabmenu.formtab .selected a {
+color: black;
+font-size: 130%;
+background-color: #5F99CF !important;
+border: none;
+}
+#sr-more-link {
+background-color: black;
+}
+.dropdown.srdrop .selected {
+color: white;
+}
+.drop-choices a.choice{
+color: black !important;
+}
+
+#link-desc::after, #text-desc::after {
+display: block;
+margin: 20px 10px;
+font-weight: bold;
+font-size: 16px;
+color: red;
+content: "Please remember to read the submission rules. No live video streams or copyright violating content allowed. Fan sites ARE acceptable, as long as they aren't blogspam";
+}
+
+
+.sidecontentbox .title h1 {
+display: block;
+}
+.titlebox form {
+    position: static
+    }
+.titlebox .usertext-body .md p > em {
+font-size:10px;
+font-style:normal;
+color:#000;
+width: 100%;
+background: url(%%trans%%);
+background-repeat: repeat;
+position: absolute;
+top:11px;
+left:0px;
+text-shadow: 0px 0px #000;
+z-index: 10001;
+margin-top: 7px;
+padding-left: 3px;
+margin-left: 0px;
+list-style: none;
+display: block;
+font-weight:bold;
+}
+.titlebox .usertext-body .md p > em li {
+    margin: 3px;
+    }
+.titlebox .usertext-body .md p > em a {
+    font-weight: bold;
+    text-decoration: underline
+    }
+/* Flair */
+/* Logo stuff below */
+/* Remove flair from the frontpage and admins box */
+.sitetable a[href*="#flair"],div.titlebox span.number,.linkflair .linkflairlabel{
+font-size:11px;
+font-weight:bold;
+color:#B31B1B;
+ text-align:center;
+ background-color:white;
+display:inline-block;
+ margin-right:.5em;
+ padding:0 2px;
+ border:1px solid #ddd;
+ border-radius:2px;
+}
+.flair,a[href="/flair"],a[href="/flairblue"],a[href="/flairretired"]{
+font-size:11px;
+font-weight:bold;
+color:#B31B1B;
+    width: 16px;
+    height: 20px;
+    vertical-align: middle;
+text-align:center;
+ background-color:white;
+    background-image: url(%%teamlogos%%);
+    background-position: 20px 20px;
+display:inline-block;
+ margin-right:.5em;
+ padding:0 2px;
+ border:1px solid #ddd;
+ border-radius:2px;
+}
+.flair-bot{
+width:auto !important;
+height:17px !important;
+}
+.flair-red,a[href="/flair"]{
+height: 13px !important;
+}
+.flair-blue,a[href="/flairblue"]{
+color:#191170;
+height: 13px !important;
+}
+.flair-silver{
+color:silver;
+height: 13px !important;
+}
+.flair-retired,a[href="/flairretired"]{
+background-color: #FFFFDC;
+border: 1px solid #C8C864;
+color:#B31B1B;
+height: 13px !important;
+}
+.side a[href="/r/azdiamondbacks"]:before,a[href="/ARI"]:before, .flair-ari {
+    background-position: 0 -21px !important
+    }
+.side a[href="/r/Braves"]:before,a[href="/ATL"]:before, .flair-atl {
+    background-position: 0 -42px !important
+    }
+a[href="/BAL"]:before, .flair-bal {
+    background-position: 0 -609px !important
+    }
+.side a[href="/r/RedSox"]:before,a[href="/BOS"]:before, .flair-bos {
+    background-position: 0 -63px !important
+    }
+ .side a[href="/r/Cubs"]:before,a[href="/CHI"]:before, .flair-cubs {
+    background-position: 0 -84px !important
+    }
+.side a[href="/r/Reds"]:before,a[href="/CIN"]:before, .flair-reds {
+    background-position: 0 -105px !important
+    }
+.side a[href="/r/WahoosTipi"]:hover:before,a[href="/CLE"]:before, .flair-cle {
+    background-position: 0 -126px !important
+    }
+.side a[href="/r/ColoradoRockies"]:before,a[href="/COL"]:before, .flair-col {
+    background-position: 0 -147px !important
+    }
+.side a[href="/r/WhiteSox"]:before,a[href="/CHW"]:before, .flair-chw {
+    background-position: 0 -168px !important
+    }
+.side a[href="/r/MotorCityKitties"]:before,a[href="/DET"]:before, .flair-det {
+    background-position: 0 -189px !important
+    }
+a[href="/FLA"]:before, .flair-fla {
+    background-position: 0 -210px !important
+    }
+.side a[href="/r/Astros"]:before,a[href="/HOU"]:before, .flair-hou {
+    background-position: 0 -231px !important
+    }
+.side a[href="/r/KCRoyals"]:before,a[href="/KCR"]:before, .flair-kcr {
+    background-position: 0 -252px !important
+    }
+.side a[href="/r/AngelsBaseball"]:before,a[href="/LAA"]:before, .flair-laa {
+    background-position: 0 0 !important
+    }
+.side a[href="/r/Dodgers"]:before,a[href="/LAD"]:before, .flair-lad {
+    background-position: 0 -273px !important
+    }
+.side a[href="/r/Brewers"]:before,a[href="/MIL"]:before, .flair-mil {
+    background-position: 0 -294px !important
+    }
+ .side a[href="/r/MinnesotaTwins"]:before,a[href="/MIN"]:before, .flair-min {
+    background-position: 0 -315px !important
+    }
+.side a[href="/r/NewYorkMets"]:before,a[href="/NYM"]:before, .flair-nym {
+    background-position: 0 -336px !important
+    }
+.side a[href="/r/Yankees"]:before,a[href="/NYY"]:before, .flair-nyy {
+    background-position: 0 -357px !important
+    }
+.side a[href="/r/oaklandathletics"]:before,a[href="/OAK"]:before, .flair-oak {
+    background-position: 0 -378px !important
+    }
+.side a[href="/r/Phillies"]:before,a[href="/PHI"]:before, .flair-phi {
+    background-position: 0 -399px !important
+    }
+.side a[href="/r/Buccos"]:before, a[href="/PIT"]:before, .flair-pit {
+    background-position: 0 -420px !important
+    }
+a[href="/SDP"]:before, .flair-sdp {
+    background-position: 0 -441px !important
+    }
+.side a[href="/r/Mariners"]:before,a[href="/SEA"]:before, .flair-sea {
+    background-position: 0 -462px !important
+    }
+  .side a[href="/r/SFGiants"]:before,a[href="/SFG"]:before, .flair-sfg {
+    background-position: 0 -483px !important
+    }
+.side a[href="/r/Cardinals"]:before,a[href="/STL"]:before, .flair-stl {
+    background-position: 0 -504px !important
+    }
+.side a[href="/r/TampaBayRays"]:before,a[href="/TBR"]:before, .flair-tbr {
+    background-position: 0 -525px !important
+    }
+.side a[href="/r/TexasRangers"]:before,a[href="/TEX"]:before, .flair-tex {
+    background-position: 0 -546px !important
+    }
+a[href="/TOR"]:before, .flair-tor {
+    background-position: 0 -567px !important
+    }
+a[href="/WAS"]:before, .flair-was {
+    background-position: 0 -588px !important
+    }
+a[href="/LAS"]:before, .flair-las {
+    background-position: 0 -630px !important
+    }
+a[href="/MIL1"]:before, .flair-mil-1 {
+    background-position: 0 -651px !important
+    }
+a[href="/TOR1"]:before, .flair-tor-1 {
+    background-position: 0 -672px !important
+    }
+a[href="/BAL1"]:before, .flair-bal-1 {
+    background-position: 0 -693px !important
+    }
+a[href="/ATL1"]:before, .flair-atl-1 {
+    background-position: 0 -714px !important
+    }
+a[href="/MIN1"]:before, .flair-min-1 {
+    background-position: 0 -735px !important
+    }
+a[href="/SWB"]:before, .flair-swb {
+    background-position: 0 -756px !important
+    }
+.side a[href="/r/Nationals"]:before,a[href="/WAS1"]:before, .flair-was-1 {
+    background-position: 0 -777px !important;
+width: 21px !important;
+    }
+a[href="/ATL2"]:before, .flair-atl-2 {
+    background-position: 0 -798px !important
+    }
+a[href="/PHI1"]:before, .flair-phi-1 {
+    background-position: 0 -819px !important
+    }
+a[href="/SFG1"]:before, .flair-sfg-1 {
+    background-position: 0 -840px !important
+    }
+a[href="/MON"]:before, .flair-mon {
+    background-position: 0 -861px !important
+    }
+.side a[href="/r/Padres"]:before,a[href="/SDP1"]:before, .flair-sdp-1 {
+    background-position: 0 -903px !important
+    }
+a[href="/SDP2"]:before, .flair-sdp-2 {
+    background-position: 0 -882px !important
+    }
+a[href="/HOU1"]:before, .flair-hou-1 {
+    background-position: 0 -924px !important
+    }
+a[href="/SEA1"]:before, .flair-sea-1 {
+    background-position: 0 -945px !important
+    }
+a[href="/OAK1"]:before, .flair-oak-1 {
+    background-position: 0 -966px !important
+    }
+a[href="/TEX1"]:before, .flair-tex-1 {
+    background-position: 0 -987px !important
+    }
+a[href="/NYY1"]:before, .flair-nyy-1 {
+    background-position: 0 -1008px !important
+    }
+a[href="/HAN"]:before, .flair-han {
+    background-position: 0 -1029px !important
+    }
+a[href="/ARI1"]:before, .flair-ari-1 {
+    background-position: 0 -1050px !important
+    }
+a[href="/BOS1"]:before, .flair-bos-1 {
+    background-position: 0 -1071px !important
+    }
+a[href="/DUR"]:before, .flair-dur {
+    background-position: 0 -1092px !important
+    }
+a[href="/LAA1"]:before, .flair-laa-1 {
+    background-position: 0 -1113px !important
+    }
+a[href="/TBR1"]:before, .flair-tbr-1 {
+    background-position: 0 -1134px !important
+    }
+a[href="/NYM1"]:before, .flair-nym-1 {
+    background-position: 0 -1155px !important
+    }
+a[href="/LID"]:before, .flair-lid {
+    background-position: 0 -1176px !important
+    }
+.side a[href="/r/Orioles"]:before,a[href="/BAL2"]:before, .flair-bal-2 {
+    background-position: 0 -1197px !important
+    }
+a[href="/SDP3"]:before, .flair-sdp-3 {
+    background-position: 0 -1218px !important
+    }
+.side a[href="/r/letsgofish"]:before,a[href="/MIA"]:before, .flair-mia {
+    background-position: 0 -1239px !important
+    }
+.side a[href="/r/WahoosTipi"]:before,a[href="/CLE1"]:before, .flair-cle-1 {
+    background-position: 0 -1260px !important
+    }
+a[href="/CHI1"]:before, .flair-chi-1 {
+    background-position: 0 -1281px !important
+    }
+.side a[href="/r/TorontoBlueJays"]:before,a[href="/TOR2"]:before, .flair-tor-2 {
+    background-position: 0 -1302px !important
+    }
+a[href="/MIN2"]:before, .flair-min-2 {
+    background-position: 0 -1323px !important
+    }
+a[href="/HOU2"]:before, .flair-hou-2 {
+    background-position: 0 -1344px !important
+    }
+a[href="/DET1"]:before, .flair-det-1 {
+    background-position: 0 -1365px !important
+    }
+a[href="/FLA1"]:before, .flair-fla-1 {
+    background-position: 0 -1386px !important
+    }
+a[href="/ARI2"]:before, .flair-ari-2 {
+    background-position: 0 -1407px !important
+    }
+a[href="/LAD1"]:before, .flair-lad-1 {
+    background-position: 0 -1428px !important
+    }
+a[href="/TBR2"]:before, .flair-tbr-2 {
+    background-position: 0 -1449px !important
+    }
+a[href="/STL1"]:before, .flair-stl-1 {
+    background-position: 0 -1470px !important
+    }
+a[href="/SEA2"]:before, .flair-sea-2 {
+    background-position: 0 -1491px !important
+    }
+a[href="/KCR1"]:before, .flair-kcr-1 {
+    background-position: 0 -1512px !important
+    }
+
+/* Team logos for use in comments */
+a[href="/ARI"]:before, a[href="/ATL"]:before, a[href="/BAL"]:before, a[href="/BOS"]:before, a[href="/CHI"]:before, a[href="/CIN"]:before, a[href="/CLE"]:before, a[href="/COL"]:before, a[href="/CHW"]:before, a[href="/DET"]:before, a[href="/FLA"]:before, a[href="/HOU"]:before, a[href="/KCR"]:before, a[href="/LAA"]:before, a[href="/LAD"]:before, a[href="/MIL"]:before, a[href="/MIN"]:before, a[href="/NYM"]:before, a[href="/NYY"]:before, a[href="/OAK"]:before, a[href="/PHI"]:before, a[href="/PIT"]:before, a[href="/SDP"]:before, a[href="/SEA"]:before, a[href="/SFG"]:before, a[href="/STL"]:before, a[href="/TBR"]:before, a[href="/TEX"]:before, a[href="/TOR"]:before, a[href="/WAS"]:before, a[href="/LAS"]:before, a[href="/MIL1"]:before, a[href="/TOR1"]:before, a[href="/BAL1"]:before, a[href="/ATL1"]:before, a[href="/MIN1"]:before, a[href="/SWB"]:before, a[href="/WAS1"]:before, a[href="/ATL2"]:before, a[href="/PHI1"]:before, a[href="/SFG1"]:before, a[href="/MON"]:before, a[href="/SDP1"]:before, a[href="/SDP2"]:before, a[href="/HOU1"]:before, a[href="/SEA1"]:before, a[href="/OAK1"]:before, a[href="/TEX1"]:before, a[href="/NYY1"]:before, a[href="/HAN"]:before, a[href="/ARI1"]:before, a[href="/BOS1"]:before, a[href="/DUR"]:before, a[href="/LAA1"]:before, a[href="/TBR1"]:before, a[href="/NYM1"]:before, a[href="/LID"]:before, a[href="/BAL2"]:before, a[href="/SDP3"]:before, a[href="/MIA"]:before, a[href="/CLE1"]:before, a[href="/CHI1"]:before, a[href="/TOR2"]:before, a[href="/MIN2"]:before, a[href="/HOU2"]:before, a[href="/DET1"]:before, a[href="/FLA1"]:before, a[href="/ARI2"]:before, a[href="/LAD1"]:before, a[href="/TBR2"]:before, a[href="/STL1"]:before, a[href="/SEA2"]:before, a[href="/KCR1"]:before, .side a[href="/r/azdiamondbacks"]:before, .side a[href="/r/Cubs"]:before, .side a[href="/r/Braves"]:before,   .side a[href="/r/ColoradoRockies"]:before, .side a[href="/r/Reds"]:before, .side a[href="/r/letsgofish"]:before, 
+ .side a[href="/r/Dodgers"]:before, .side a[href="/r/Astros"]:before, .side a[href="/r/NewYorkMets"]:before,
+  .side a[href="/r/Padres"]:before, .side a[href="/r/Brewers"]:before, .side a[href="/r/Phillies"]:before, 
+ .side a[href="/r/SFGiants"]:before, .side a[href="/r/Buccos"]:before, .side a[href="/r/Nationals"]:before,   .side a[href="/r/Cardinals"]:before,  .side a[href="/r/AngelsBaseball"]:before, .side a[href="/r/WhiteSox"]:before, .side a[href="/r/Orioles"]:before,  .side a[href="/r/oaklandathletics"]:before, .side a[href="/r/WahoosTipi"]:before, .side a[href="/r/RedSox"]:before,  .side a[href="/r/Mariners"]:before, .side a[href="/r/MotorCityKitties"]:before, .side a[href="/r/Yankees"]:before,  .side a[href="/r/TexasRangers"]:before, .side a[href="/r/KCRoyals"]:before, .side a[href="/r/TampaBayRays"]:before,   .side a[href="/r/MinnesotaTwins"]:before, .side a[href="/r/TorontoBlueJays"]:before {
+     width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%teamlogos%%);
+    background-position: -9999px -9999px;
+    vertical-align: middle;
+    margin-right: 3px;
+    content: ""
+    }
+/*2002 World Series*/
+.footer-parent {
+    height: 430px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    clear: both;
+    background: transparent url(%%bottom%%) no-repeat;
+    text-align: center;
+    width: 100%;
+    background-position: 50% 100%;
+    margin-top: 0px;
+    margin-bottom: -1px
+    }
+a[href="/WS"]:before  {
+    background:url(%%worldseries%%);
+    }
+a[href="/trans"]:before  {
+width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+background-image: url(%%trans%%);
+    background-position: -9999px -9999px;
+    vertical-align: middle;
+    margin-right: 3px;
+    content: ""
+    }
+.tabmenu li.selected a {
+    border-style: solid;
+    border-width: 0px;
+    color: #FFF;
+    z-index: 100;
+    background-color: #369
+    }
+.tabmenu li a {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    color: #ffffff;
+    background-color: #069
+    }
+.tabmenu li a:hover {
+    background-color: #369
+    }
+.tabmenu li.selected a:hover {
+    background-color: #369
+    }
+.content {
+    margin-top: 33px
+    }
+/* This gem is from jamt9000 */
+/* Positioning a new tab up top */
+.titlebox .usertext-body .md ol li a {
+background-color: #FFFFDC;
+border: 1px solid #C8C864;
+    color: #E8701A;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid #2e2e2e
+    }
+.titlebox .usertext-body .md ol li a:hover {
+background-color: #FFFFDC;
+border: 1px solid #C8C864;
+    color: #2e2e2e
+    }
+.titlebox form {
+    position: static
+    }
+.titlebox .usertext-body .md ol {
+list-style: none;
+position: absolute;
+top: 145px;
+left: 0px;
+z-index: 90001111;
+margin: 0;
+padding: 0;
+display: table;
+}
+.titlebox .usertext-body .md ol li {
+    display: inline;
+    margin: 0 3px
+    }
+.titlebox .usertext-body .md ol li a {
+    background-color: #F6E69F;
+    padding: 2px 6px 2px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small
+    }
+div.linkinfo .upvotes span.word {
+    display: none
+    }
+div.linkinfo .upvotes span.number:after {
+    color: #945124;
+    content: " hits"
+    }
+.linkinfo .upvotes {
+    font-size: 80%;
+    color: #945124
+    }
+/* downvotes */
+div.linkinfo .downvotes span.word {
+    display: none
+    }
+div.linkinfo .downvotes span.number:after {
+    color: #397482;
+    content: " strikeouts"
+    }
+.sidebox.create,.sidebox.submit .spacer,div.side div.spacer div.sidebox.submit div.spacer,.morelink .nub {
+display: none;
+}
+/*submit button link fixed*/
+
+.sidebox .morelink{
+	background:#b31b1b;
+	text-align:center;
+	-moz-border-radius-topleft:6px;
+	-moz-border-radius-bottomleft:6px;
+	border:1px solid #006;
+	border-radius:5px;
+	color:#FFF;
+	width:100%;
+}
+
+
+.sidebox .morelink a {
+	color:#FFF;
+}
+
+.sidebox .morelink a:hover {
+	color:#FFF;
+	background:#369;
+}
+.morelink,.morelink a,.morelink a:hover,.morelink:hover .nub, .mlhn{
+color:#b31b1b;
+}
+.morelink a:hover{
+color:#191170;
+}
+#searchexpando {
+padding-top: 10px;
+z-index: 999999;
+position: absolute;
+}
+#search input[type="text"] {
+width: 276px;
+}
+.linkinfo{margin-top: 55px;
+}
+.edited-timestamp {
+display: none;
+}
+.side{
+width:282px;
+}
+.link .rank {
+    display: none
+    }
+/* adds spacing and a line between posts on the front of subreddit*/
+.content #siteTable .link {
+    margin-bottom: 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ececec
+    }
+.bottom .flair.flair-red {
+display: none;
+}
+a[href*="game_thread"].thumbnail.self {
+    background: transparent url(%%gamethread%%) no-repeat 0 0;
+width:83px;
+height:70px;
+    }
+.thumbnail{
+border-radius:5px;
+}
+.linkflair-gt{
+background:transparent url(%%bg%%);
+background-repeat:repeat;
+border: 1px solid #AAA !important;
+    border-radius: 7px;
+
+}
+.side .md blockquote{
+border-left: 0px solid #369 !important;
+}
+.loggedin .side .md blockquote, .subscriber .side .md blockquote{
+display:none;
+}
+/* 
+.linkflair-gt,.linkflair-gt .commentarea{
+display:none;
+}
+.subscriber .linkflair-gt,.subscriber .linkflair-gt .commentarea{
+display:block !important;
+}
+*/
+.popup{
+z-index: 900000000000 !important;
+}
+.side .md table td{
+padding:0px !important;
+}
+.res-navTop {
+margin-top: 13px;
+}
+#RESConsole {
+z-index: 90000000000000 !important;
+}
+/* change upvotes and downvotes to hits and strikeouts*/
+div.linkinfo .upvotes span.word {
+    display: none
+    }
+div.linkinfo .upvotes span.number:after {
+    content: " uptrouts"
+    }
+.linkinfo .upvotes {
+    font-size: 80%;
+    
+    }
+div.linkinfo .downvotes span.word {
+    display: none
+    }
+div.linkinfo .downvotes span.number:after {
+   
+    content: " downvotes"
+    }
